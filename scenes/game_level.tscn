@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://bu6nnecjif58c"]
+
+[node name="GameLevel" type="Node2D" unique_id=765427999]
+
+[node name="Background" type="CanvasLayer" parent="." unique_id=1673047553]
