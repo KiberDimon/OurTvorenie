@@ -1,7 +1,34 @@
 [gd_scene format=3 uid="uid://dbtiih3qvmdr2"]
 
+[ext_resource type="Script" uid="uid://d0pbo6ynaj6gl" path="res://scripts/main.gd" id="1_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://bu6nnecjif58c" path="res://scenes/game_level.tscn" id="1_o5qli"]
 
 [node name="Main" type="Node2D" unique_id=1865117869]
+script = ExtResource("1_0wfyh")
 
 [node name="GameLevel" parent="." unique_id=765427999 instance=ExtResource("1_o5qli")]
+visible = false
+
+[node name="Menu" type="Control" parent="." unique_id=739919620]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Start" type="Button" parent="Menu" unique_id=1995638516]
+layout_mode = 0
+offset_left = 184.0
+offset_top = 80.0
+offset_right = 296.0
+offset_bottom = 111.0
+text = "Start"
+
+[node name="Exit" type="Button" parent="Menu" unique_id=1592338725]
+layout_mode = 0
+offset_left = 184.0
+offset_top = 136.0
+offset_right = 296.0
+offset_bottom = 167.0
+text = "Exit"
+
+[connection signal="pressed" from="Menu/Start" to="." method="_on_start_pressed"]

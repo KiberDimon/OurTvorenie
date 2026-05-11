@@ -1,5 +1,23 @@
 [gd_scene format=3 uid="uid://bu6nnecjif58c"]
 
+[ext_resource type="Script" uid="uid://hy1ffqeb8pkn" path="res://scripts/button_of_temp.gd" id="1_h3dka"]
+[ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="2_6fv2f"]
+
 [node name="GameLevel" type="Node2D" unique_id=765427999]
 
 [node name="Background" type="CanvasLayer" parent="." unique_id=1673047553]
+
+[node name="magicwand" type="Sprite2D" parent="." unique_id=1458985060]
+position = Vector2(466, 238)
+scale = Vector2(0.46875, 0.082031295)
+texture = ExtResource("2_6fv2f")
+offset = Vector2(-55.275, 0)
+
+[node name="ReleOfFire" type="TextureButton" parent="magicwand" unique_id=1054697891]
+offset_left = -121.60004
+offset_top = -85.33333
+offset_right = 10.666626
+offset_bottom = 85.333176
+script = ExtResource("1_h3dka")
+
+[connection signal="pressed" from="magicwand/ReleOfFire" to="magicwand/ReleOfFire" method="_on_pressed"]
