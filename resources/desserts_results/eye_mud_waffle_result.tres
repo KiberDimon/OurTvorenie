@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="DessertResult" format=3 uid="uid://dx13nfh0b20l3"]
+
+[ext_resource type="Script" uid="uid://cvakjvu5ghmls" path="res://scripts/dessert_result.gd" id="1_gvxfo"]
+[ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="2_b0k1o"]
+
+[resource]
+script = ExtResource("1_gvxfo")
+display_name = "Eye_mud_waffle"
+texture = ExtResource("2_b0k1o")

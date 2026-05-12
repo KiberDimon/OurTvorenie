@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Recipe" format=3 uid="uid://cah2watq0vf8d"]
+
+[ext_resource type="Resource" uid="uid://bq28vpp5ert15" path="res://resources/ingredients/base/muffin_base.tres" id="1_tbmfo"]
+[ext_resource type="Resource" uid="uid://ddcr68lor2b18" path="res://resources/ingredients/cream/mold_cream.tres" id="2_hwbfb"]
+[ext_resource type="Resource" uid="uid://d1i312cj8tlqw" path="res://resources/desserts_results/worm_mold_muffin_result.tres" id="3_kbvyl"]
+[ext_resource type="Script" path="res://scripts/recipe.gd" id="4_3mejh"]
+[ext_resource type="Resource" uid="uid://cmqodu2axiigi" path="res://resources/ingredients/topping/worm_topping.tres" id="5_uma5v"]
+
+[resource]
+script = ExtResource("4_3mejh")
+base = ExtResource("1_tbmfo")
+cream = ExtResource("2_hwbfb")
+topping = ExtResource("5_uma5v")
+result = ExtResource("3_kbvyl")

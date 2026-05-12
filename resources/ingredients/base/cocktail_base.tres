@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Ingredient" format=3 uid="uid://bxfc4kigpgbhc"]
+
+[ext_resource type="Script" uid="uid://dk2fbttw857vm" path="res://scripts/ingredient.gd" id="1_278un"]
+[ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="2_5sqeq"]
+
+[resource]
+script = ExtResource("1_278un")
+id = &"cocktail_base"
+display_name = "Cocktail form"
+texture = ExtResource("2_5sqeq")

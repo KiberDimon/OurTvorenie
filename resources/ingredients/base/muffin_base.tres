@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="Ingredient" format=3 uid="uid://bq28vpp5ert15"]
 
-[ext_resource type="Script" uid="uid://dk2fbttw857vm" path="res://scripts/ingredient.gd" id="1_08kmu"]
+[ext_resource type="Script" path="res://scripts/ingredient.gd" id="1_08kmu"]
 [ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="2_f6wam"]
 
 [resource]
@@ -8,4 +8,3 @@ script = ExtResource("1_08kmu")
 id = &"muffin_base"
 display_name = "Muffin form"
 texture = ExtResource("2_f6wam")
-metadata/_custom_type_script = "uid://dk2fbttw857vm"

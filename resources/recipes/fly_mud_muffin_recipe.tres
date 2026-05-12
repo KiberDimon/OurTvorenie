@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Recipe" format=3 uid="uid://ch7vw28xiqrr8"]
+
+[ext_resource type="Resource" uid="uid://bq28vpp5ert15" path="res://resources/ingredients/base/muffin_base.tres" id="1_lbrb8"]
+[ext_resource type="Resource" uid="uid://ouenind7kr8c" path="res://resources/ingredients/cream/mud_cream.tres" id="2_is8mu"]
+[ext_resource type="Resource" uid="uid://bxvd6rcma40ye" path="res://resources/desserts_results/fly_mud_muffin_result.tres" id="3_u7f6q"]
+[ext_resource type="Script" path="res://scripts/recipe.gd" id="4_hkvds"]
+[ext_resource type="Resource" uid="uid://c6egtfrev1eo0" path="res://resources/ingredients/topping/fly_topping.tres" id="5_qqowi"]
+
+[resource]
+script = ExtResource("4_hkvds")
+base = ExtResource("1_lbrb8")
+cream = ExtResource("2_is8mu")
+topping = ExtResource("5_qqowi")
+result = ExtResource("3_u7f6q")

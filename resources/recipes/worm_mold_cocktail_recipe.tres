@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Recipe" format=3 uid="uid://cg3p8ot0thxc4"]
+
+[ext_resource type="Resource" uid="uid://bxfc4kigpgbhc" path="res://resources/ingredients/base/cocktail_base.tres" id="1_ngi5t"]
+[ext_resource type="Resource" uid="uid://ddcr68lor2b18" path="res://resources/ingredients/cream/mold_cream.tres" id="2_yxwq7"]
+[ext_resource type="Resource" uid="uid://oowa6rb0yamg" path="res://resources/desserts_results/worm_mold_cocktail_result.tres" id="3_20r83"]
+[ext_resource type="Script" path="res://scripts/recipe.gd" id="4_3mejh"]
+[ext_resource type="Resource" uid="uid://cmqodu2axiigi" path="res://resources/ingredients/topping/worm_topping.tres" id="5_uetjp"]
+
+[resource]
+script = ExtResource("4_3mejh")
+base = ExtResource("1_ngi5t")
+cream = ExtResource("2_yxwq7")
+topping = ExtResource("5_uetjp")
+result = ExtResource("3_20r83")

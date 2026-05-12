@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Recipe" format=3 uid="uid://d4d11mxxb4v4c"]
+
+[ext_resource type="Resource" uid="uid://bxfc4kigpgbhc" path="res://resources/ingredients/base/cocktail_base.tres" id="1_oyh7n"]
+[ext_resource type="Resource" uid="uid://c1csr75axlrrq" path="res://resources/ingredients/cream/blood_cream.tres" id="2_jpew5"]
+[ext_resource type="Resource" uid="uid://cjgf4jt6m44b8" path="res://resources/desserts_results/eye_blood_cocktail_result.tres" id="3_n233y"]
+[ext_resource type="Script" path="res://scripts/recipe.gd" id="4_0gr53"]
+[ext_resource type="Resource" uid="uid://dnqynwy6kba1f" path="res://resources/ingredients/topping/eye_topping.tres" id="5_3jwmx"]
+
+[resource]
+script = ExtResource("4_0gr53")
+base = ExtResource("1_oyh7n")
+cream = ExtResource("2_jpew5")
+topping = ExtResource("5_3jwmx")
+result = ExtResource("3_n233y")

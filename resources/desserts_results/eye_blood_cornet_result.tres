@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="DessertResult" format=3 uid="uid://bam8pkd2aqjoe"]
+
+[ext_resource type="Script" uid="uid://cvakjvu5ghmls" path="res://scripts/dessert_result.gd" id="1_r03o7"]
+[ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="2_pg2ma"]
+
+[resource]
+script = ExtResource("1_r03o7")
+display_name = "Eye_blood_cornet"
+texture = ExtResource("2_pg2ma")

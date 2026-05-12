@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="DessertResult" format=3 uid="uid://bs4jq13aishvb"]
+
+[ext_resource type="Script" uid="uid://cvakjvu5ghmls" path="res://scripts/dessert_result.gd" id="1_whfbj"]
+[ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="2_vjgk7"]
+
+[resource]
+script = ExtResource("1_whfbj")
+display_name = "Worm_mold_cornet"
+texture = ExtResource("2_vjgk7")

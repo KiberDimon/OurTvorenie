@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="DessertResult" format=3 uid="uid://bl0pn8inxee2"]
+
+[ext_resource type="Script" uid="uid://cvakjvu5ghmls" path="res://scripts/dessert_result.gd" id="1_lpvov"]
+[ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="2_awvgs"]
+
+[resource]
+script = ExtResource("1_lpvov")
+display_name = "Worm_mud_muffin"
+texture = ExtResource("2_awvgs")

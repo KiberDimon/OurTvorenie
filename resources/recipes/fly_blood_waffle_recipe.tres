@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Recipe" format=3 uid="uid://2iy1hlhx78o3"]
+
+[ext_resource type="Resource" uid="uid://b7lsv3jtrhxgs" path="res://resources/ingredients/base/waffle_base.tres" id="1_bv2m0"]
+[ext_resource type="Resource" uid="uid://c1csr75axlrrq" path="res://resources/ingredients/cream/blood_cream.tres" id="2_1jpj2"]
+[ext_resource type="Resource" uid="uid://8f5ggoduwxed" path="res://resources/desserts_results/fly_blood_waffle_result.tres" id="3_4pfmd"]
+[ext_resource type="Script" path="res://scripts/recipe.gd" id="4_5bv5x"]
+[ext_resource type="Resource" uid="uid://c6egtfrev1eo0" path="res://resources/ingredients/topping/fly_topping.tres" id="5_klr5q"]
+
+[resource]
+script = ExtResource("4_5bv5x")
+base = ExtResource("1_bv2m0")
+cream = ExtResource("2_1jpj2")
+topping = ExtResource("5_klr5q")
+result = ExtResource("3_4pfmd")

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="DessertResult" format=3 uid="uid://cuxvbtkgq61k2"]
+
+[ext_resource type="Script" uid="uid://cvakjvu5ghmls" path="res://scripts/dessert_result.gd" id="1_nb7m7"]
+[ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="2_hx73c"]
+
+[resource]
+script = ExtResource("1_nb7m7")
+display_name = "Worm_mud_cocktail"
+texture = ExtResource("2_hx73c")

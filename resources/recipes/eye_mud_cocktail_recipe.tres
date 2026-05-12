@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Recipe" format=3 uid="uid://pjgjyaf6142l"]
+
+[ext_resource type="Resource" uid="uid://bxfc4kigpgbhc" path="res://resources/ingredients/base/cocktail_base.tres" id="1_n3t0e"]
+[ext_resource type="Resource" uid="uid://ouenind7kr8c" path="res://resources/ingredients/cream/mud_cream.tres" id="2_acght"]
+[ext_resource type="Resource" uid="uid://don43qv7eu2s1" path="res://resources/desserts_results/eye_mud_cocktail_result.tres" id="3_66w40"]
+[ext_resource type="Script" path="res://scripts/recipe.gd" id="4_iyq2w"]
+[ext_resource type="Resource" uid="uid://dnqynwy6kba1f" path="res://resources/ingredients/topping/eye_topping.tres" id="5_cp24c"]
+
+[resource]
+script = ExtResource("4_iyq2w")
+base = ExtResource("1_n3t0e")
+cream = ExtResource("2_acght")
+topping = ExtResource("5_cp24c")
+result = ExtResource("3_66w40")
+metadata/_custom_type_script = "uid://by2wqg4diaf58"

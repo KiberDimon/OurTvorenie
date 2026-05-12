@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Ingredient" format=3 uid="uid://cmqodu2axiigi"]
+
+[ext_resource type="Script" uid="uid://dk2fbttw857vm" path="res://scripts/ingredient.gd" id="1_wt530"]
+[ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="2_tjbvt"]
+
+[resource]
+script = ExtResource("1_wt530")
+id = &"worm_topping"
+display_name = "Worms"
+category = 2
+texture = ExtResource("2_tjbvt")

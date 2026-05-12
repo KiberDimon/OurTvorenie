@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="DessertResult" format=3 uid="uid://h6gcvjsyqkd7"]
+
+[ext_resource type="Script" uid="uid://cvakjvu5ghmls" path="res://scripts/dessert_result.gd" id="1_5gdlx"]
+[ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="2_07ym8"]
+
+[resource]
+script = ExtResource("1_5gdlx")
+display_name = "Fly_blood_muffin"
+texture = ExtResource("2_07ym8")

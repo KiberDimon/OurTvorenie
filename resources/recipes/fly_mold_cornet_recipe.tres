@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Recipe" format=3 uid="uid://ilai4je5yfn"]
+
+[ext_resource type="Resource" uid="uid://d2nfvcckhbp1v" path="res://resources/ingredients/base/cornet_base.tres" id="1_mj2t4"]
+[ext_resource type="Resource" uid="uid://ddcr68lor2b18" path="res://resources/ingredients/cream/mold_cream.tres" id="2_4viit"]
+[ext_resource type="Resource" uid="uid://gi0733mwpq4s" path="res://resources/desserts_results/fly_mold_cornet_result.tres" id="3_4evst"]
+[ext_resource type="Script" path="res://scripts/recipe.gd" id="4_gphbu"]
+[ext_resource type="Resource" uid="uid://c6egtfrev1eo0" path="res://resources/ingredients/topping/fly_topping.tres" id="5_i015k"]
+
+[resource]
+script = ExtResource("4_gphbu")
+base = ExtResource("1_mj2t4")
+cream = ExtResource("2_4viit")
+topping = ExtResource("5_i015k")
+result = ExtResource("3_4evst")

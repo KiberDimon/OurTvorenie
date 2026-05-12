@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Recipe" format=3 uid="uid://f7x2j15tq073"]
+
+[ext_resource type="Resource" uid="uid://bxfc4kigpgbhc" path="res://resources/ingredients/base/cocktail_base.tres" id="1_luq7v"]
+[ext_resource type="Resource" uid="uid://c1csr75axlrrq" path="res://resources/ingredients/cream/blood_cream.tres" id="2_gs1wk"]
+[ext_resource type="Resource" uid="uid://c0nl7uxqa18ds" path="res://resources/desserts_results/worm_blood_cocktail_result.tres" id="3_8spyc"]
+[ext_resource type="Script" path="res://scripts/recipe.gd" id="4_lsdpf"]
+[ext_resource type="Resource" uid="uid://cmqodu2axiigi" path="res://resources/ingredients/topping/worm_topping.tres" id="5_ukrmj"]
+
+[resource]
+script = ExtResource("4_lsdpf")
+base = ExtResource("1_luq7v")
+cream = ExtResource("2_gs1wk")
+topping = ExtResource("5_ukrmj")
+result = ExtResource("3_8spyc")

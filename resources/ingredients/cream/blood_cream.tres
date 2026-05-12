@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Ingredient" format=3 uid="uid://c1csr75axlrrq"]
+
+[ext_resource type="Script" uid="uid://dk2fbttw857vm" path="res://scripts/ingredient.gd" id="1_123c2"]
+[ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="2_ek4am"]
+
+[resource]
+script = ExtResource("1_123c2")
+id = &"blood_cream"
+display_name = "Blood"
+category = 1
+texture = ExtResource("2_ek4am")

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Recipe" format=3 uid="uid://dnwlqp5xyynxb"]
+
+[ext_resource type="Resource" uid="uid://bxfc4kigpgbhc" path="res://resources/ingredients/base/cocktail_base.tres" id="1_stket"]
+[ext_resource type="Resource" uid="uid://c1csr75axlrrq" path="res://resources/ingredients/cream/blood_cream.tres" id="2_vqqtu"]
+[ext_resource type="Resource" uid="uid://d268twffmda8m" path="res://resources/desserts_results/fly_blood_cocktail_result.tres" id="3_i6oee"]
+[ext_resource type="Script" path="res://scripts/recipe.gd" id="4_5bv5x"]
+[ext_resource type="Resource" uid="uid://c6egtfrev1eo0" path="res://resources/ingredients/topping/fly_topping.tres" id="5_pkn53"]
+
+[resource]
+script = ExtResource("4_5bv5x")
+base = ExtResource("1_stket")
+cream = ExtResource("2_vqqtu")
+topping = ExtResource("5_pkn53")
+result = ExtResource("3_i6oee")

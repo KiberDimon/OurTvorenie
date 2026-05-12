@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="DessertResult" format=3 uid="uid://wscgretxfo7t"]
+
+[ext_resource type="Script" uid="uid://cvakjvu5ghmls" path="res://scripts/dessert_result.gd" id="1_bm6ie"]
+[ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="2_yprnu"]
+
+[resource]
+script = ExtResource("1_bm6ie")
+display_name = "Worm_mold_waffle"
+texture = ExtResource("2_yprnu")

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Ingredient" format=3 uid="uid://d2nfvcckhbp1v"]
+
+[ext_resource type="Script" uid="uid://dk2fbttw857vm" path="res://scripts/ingredient.gd" id="1_b8u4i"]
+[ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="2_05xaw"]
+
+[resource]
+script = ExtResource("1_b8u4i")
+id = &"cornet_base"
+display_name = "Cornet form"
+texture = ExtResource("2_05xaw")
