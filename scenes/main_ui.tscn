@@ -1,0 +1,109 @@
+[gd_scene format=3 uid="uid://bsy6hckwvqxh0"]
+
+[ext_resource type="Script" uid="uid://b26f8h7bhyy3m" path="res://scripts/main_ui.gd" id="1_r8eje"]
+[ext_resource type="Script" uid="uid://vh4dour383om" path="res://scripts/recipe_manager.gd" id="1_scoti"]
+[ext_resource type="Script" uid="uid://dtg633bapwlsv" path="res://scripts/cauldron.gd" id="2_i1gbh"]
+[ext_resource type="Resource" uid="uid://dnqynwy6kba1f" path="res://resources/ingredients/topping/eye_topping.tres" id="2_j6a7c"]
+[ext_resource type="Resource" uid="uid://ouenind7kr8c" path="res://resources/ingredients/cream/mud_cream.tres" id="3_scoti"]
+[ext_resource type="Resource" uid="uid://bq28vpp5ert15" path="res://resources/ingredients/base/muffin_base.tres" id="4_i1gbh"]
+[ext_resource type="Script" uid="uid://dk2fbttw857vm" path="res://scripts/ingredient.gd" id="7_kyx1g"]
+[ext_resource type="Script" uid="uid://by2wqg4diaf58" path="res://scripts/recipe.gd" id="8_r8eje"]
+[ext_resource type="Resource" uid="uid://5svnoaf0v62t" path="res://resources/recipes/eye_mud_maffin_recipe.tres" id="9_r0apq"]
+[ext_resource type="PackedScene" uid="uid://b63ia4ah2tngg" path="res://scenes/ingredient_card.tscn" id="10_r0apq"]
+[ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="11_r0apq"]
+
+[node name="MainUI" type="Control" unique_id=1500070565]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_r8eje")
+
+[node name="RecipeManager" type="Node" parent="." unique_id=266768130]
+script = ExtResource("1_scoti")
+all_ingredients = Array[ExtResource("7_kyx1g")]([ExtResource("4_i1gbh"), ExtResource("3_scoti"), ExtResource("2_j6a7c")])
+recipes = Array[ExtResource("8_r8eje")]([ExtResource("9_r0apq")])
+
+[node name="Cauldron" type="Control" parent="." unique_id=1331123795]
+anchors_preset = 0
+offset_left = 252.0
+offset_top = 167.0
+offset_right = 292.0
+offset_bottom = 207.0
+script = ExtResource("2_i1gbh")
+
+[node name="TextureRect" type="TextureRect" parent="Cauldron" unique_id=1183088268]
+layout_mode = 0
+offset_left = -72.0
+offset_top = -37.0
+offset_right = 56.0
+offset_bottom = 91.0
+texture = ExtResource("11_r0apq")
+
+[node name="IngredientList" type="Control" parent="." unique_id=183196154]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ToppingCards" type="Control" parent="IngredientList" unique_id=1360043338]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="EyeTopping" parent="IngredientList/ToppingCards" unique_id=336169828 instance=ExtResource("10_r0apq")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.15
+anchor_top = 0.15
+anchor_right = 0.15
+anchor_bottom = 0.15
+offset_right = 0.0
+offset_bottom = 0.0
+ingredient = ExtResource("2_j6a7c")
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="IngredientList/ToppingCards/EyeTopping" unique_id=419315689]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("11_r0apq")
+
+[node name="CreamCards" type="Control" parent="IngredientList" unique_id=1625447925]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MudCream" parent="IngredientList/CreamCards" unique_id=172219015 instance=ExtResource("10_r0apq")]
+layout_mode = 0
+offset_left = 238.0
+offset_top = -2.0
+offset_right = 278.0
+offset_bottom = 38.0
+ingredient = ExtResource("3_scoti")
+
+[node name="TextureRect" type="TextureRect" parent="IngredientList/CreamCards/MudCream" unique_id=1768565590]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("11_r0apq")
+
+[node name="BaseCards" type="Control" parent="IngredientList" unique_id=1027731840]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MuffinBase" parent="IngredientList/BaseCards" unique_id=414454154 instance=ExtResource("10_r0apq")]
+layout_mode = 0
+offset_left = 396.0
+offset_top = 16.0
+offset_right = 436.0
+offset_bottom = 56.0
+ingredient = ExtResource("4_i1gbh")
+
+[node name="TextureRect" type="TextureRect" parent="IngredientList/BaseCards/MuffinBase" unique_id=240757921]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("11_r0apq")

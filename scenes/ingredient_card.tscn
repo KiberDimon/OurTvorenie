@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://b63ia4ah2tngg"]
+
+[ext_resource type="Script" uid="uid://cqhxeg4eyg5gr" path="res://scripts/ingredient_card.gd" id="1_8nxxg"]
+
+[node name="IngredientCard" type="Control" unique_id=336169828]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_8nxxg")
