@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://mw3o5v6gf0g2"]
 
 [ext_resource type="Script" uid="uid://q0b16rkhyxts" path="res://scripts/dessert_item.gd" id="1_7bgw8"]
-[ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="1_n6oxs"]
 
 [node name="DessertItem" type="Control" unique_id=1019150063]
 layout_mode = 3
@@ -16,7 +15,6 @@ script = ExtResource("1_7bgw8")
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
-texture = ExtResource("1_n6oxs")
 
 [node name="NameLabel" type="Label" parent="." unique_id=1094481345]
 layout_mode = 0

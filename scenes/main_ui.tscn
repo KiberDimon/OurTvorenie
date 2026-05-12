@@ -26,12 +26,19 @@ script = ExtResource("1_scoti")
 all_ingredients = Array[ExtResource("7_kyx1g")]([ExtResource("4_i1gbh"), ExtResource("3_scoti"), ExtResource("2_j6a7c")])
 recipes = Array[ExtResource("8_r8eje")]([ExtResource("9_r0apq")])
 
+[node name="Tray" type="Control" parent="." unique_id=1960852670]
+anchors_preset = 0
+offset_left = 346.0
+offset_top = 31.0
+offset_right = 386.0
+offset_bottom = 71.0
+
 [node name="Cauldron" type="Control" parent="." unique_id=1331123795]
 anchors_preset = 0
-offset_left = 252.0
-offset_top = 167.0
-offset_right = 292.0
-offset_bottom = 207.0
+offset_left = 404.0
+offset_top = 207.0
+offset_right = 444.0
+offset_bottom = 247.0
 script = ExtResource("2_i1gbh")
 
 [node name="TextureRect" type="TextureRect" parent="Cauldron" unique_id=1183088268]
@@ -55,10 +62,10 @@ offset_bottom = 40.0
 [node name="EyeTopping" parent="IngredientList/ToppingCards" unique_id=336169828 instance=ExtResource("10_r0apq")]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.15
-anchor_top = 0.15
-anchor_right = 0.15
-anchor_bottom = 0.15
+anchor_left = 0.1
+anchor_top = 4.275
+anchor_right = 0.1
+anchor_bottom = 4.275
 offset_right = 0.0
 offset_bottom = 0.0
 ingredient = ExtResource("2_j6a7c")
@@ -77,10 +84,10 @@ offset_bottom = 40.0
 
 [node name="MudCream" parent="IngredientList/CreamCards" unique_id=172219015 instance=ExtResource("10_r0apq")]
 layout_mode = 0
-offset_left = 238.0
-offset_top = -2.0
-offset_right = 278.0
-offset_bottom = 38.0
+offset_left = 37.0
+offset_top = 30.0
+offset_right = 77.0
+offset_bottom = 70.0
 ingredient = ExtResource("3_scoti")
 
 [node name="TextureRect" type="TextureRect" parent="IngredientList/CreamCards/MudCream" unique_id=1768565590]
@@ -96,10 +103,10 @@ offset_bottom = 40.0
 
 [node name="MuffinBase" parent="IngredientList/BaseCards" unique_id=414454154 instance=ExtResource("10_r0apq")]
 layout_mode = 0
-offset_left = 396.0
-offset_top = 16.0
-offset_right = 436.0
-offset_bottom = 56.0
+offset_left = 175.0
+offset_top = 144.0
+offset_right = 215.0
+offset_bottom = 184.0
 ingredient = ExtResource("4_i1gbh")
 
 [node name="TextureRect" type="TextureRect" parent="IngredientList/BaseCards/MuffinBase" unique_id=240757921]

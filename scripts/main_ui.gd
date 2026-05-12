@@ -5,7 +5,7 @@ extends Control
 @onready var base_cards = $IngredientList/BaseCards
 @onready var cream_cards = $IngredientList/CreamCards
 @onready var topping_cards = $IngredientList/ToppingCards
-@onready var result_display = $ResultDisplay
+@onready var tray: Control = $Tray 
 
 func _ready():
 	# Соединяем сигналы
@@ -29,15 +29,17 @@ func _populate_cards():
 				topping_cards.add_child(card)
 
 func _on_ingredient_added(category: Ingredient.Category):
-	# Блокируем все карточки данной категории (делаем неактивными)
+	# Блокируем все карточки данной категории
 	var container = _get_container_for(category)
 	for card in container.get_children():
 		card.mouse_filter = Control.MOUSE_FILTER_IGNORE
-		card.modulate = Color(0.5, 0.5, 0.5, 0.5)  # визуальный фидбек
+		card.modulate = Color(0.5, 0.5, 0.5, 0.5)
 
 func _on_dessert_ready(result: DessertResult):
-	# Показываем результат (анимация, текст)
-	result_display.show_result(result)
+	var dessert_scene = preload("res://scenes/dessert_item.tscn")
+	var item: DessertItem = dessert_scene.instantiate()
+	item.setup(result)
+	tray.add_child(item)
 
 func _on_cauldron_cleared():
 	# Разблокируем все карточки для следующего приготовления
@@ -45,8 +47,7 @@ func _on_cauldron_cleared():
 		for card in container.get_children():
 			card.mouse_filter = Control.MOUSE_FILTER_STOP
 			card.modulate = Color.WHITE
-	result_display.hide_result()
-	
+
 func _get_container_for(category: Ingredient.Category) -> Control:
 	match category:
 		Ingredient.Category.BASE:
