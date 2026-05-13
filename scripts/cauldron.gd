@@ -23,11 +23,13 @@ func _drop_data(at_position: Vector2, data: Variant) -> void:
 	
 	# Если все три категории на месте — готовим
 	if _current.size() == 3:
-		var result = RecipeManager.get_result(
-			_current[Ingredient.Category.BASE].id,
-			_current[Ingredient.Category.CREAM].id,
-			_current[Ingredient.Category.TOPPING].id
-		)
+		var base_id = _current[Ingredient.Category.BASE].id
+		var cream_id = _current[Ingredient.Category.CREAM].id
+		var topping_id = _current[Ingredient.Category.TOPPING].id
+		print("Запрашиваю: base=%s cream=%s topping=%s" % [base_id, cream_id, topping_id])
+	
+		var result = RecipeManager.get_result(base_id, cream_id, topping_id)
+		print("Результат: ", result)
 		dessert_ready.emit(result)
 		_current.clear()
 		cleared.emit()

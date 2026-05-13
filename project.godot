@@ -17,7 +17,7 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-RecipeManager="*uid://vh4dour383om"
+RecipeManager="*uid://btng08m3sy3a2"
 
 [display]
 

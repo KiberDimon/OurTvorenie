@@ -19,6 +19,7 @@ func update_display():
 		icon.texture = dessert_result.texture
 	if dessert_result and name_label:
 		name_label.text = dessert_result.display_name
+	print(dessert_result)
 
 # Настройка, если создаём динамически и не используем сеттер
 func setup(result: DessertResult):
