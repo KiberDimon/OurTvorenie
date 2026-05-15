@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="GuestData" format=3 uid="uid://108cqji8i2p0"]
+
+[ext_resource type="Script" uid="uid://xnyy3k1u1ref" path="res://scripts/guest_data.gd" id="1_jxxsv"]
+[ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="2_a7yrf"]
+
+[resource]
+script = ExtResource("1_jxxsv")
+id = &"zombie"
+display_name = "Zombu"
+texture = ExtResource("2_a7yrf")
+metadata/_custom_type_script = "uid://xnyy3k1u1ref"

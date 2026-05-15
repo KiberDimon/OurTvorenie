@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://c0tvswio13s16"]
+
+[ext_resource type="Script" uid="uid://brfaid82c8vs" path="res://scripts/guest_slot.gd" id="1_2hnih"]
+
+[node name="GuestSlot" type="Control" unique_id=301341932]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -352.0
+offset_bottom = -142.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+script = ExtResource("1_2hnih")
+
+[node name="GuestName" type="Label" parent="." unique_id=1195850699]
+z_index = 1
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="OrderName" type="Label" parent="." unique_id=428579326]
+z_index = 1
+layout_mode = 0
+offset_top = 40.0
+offset_right = 40.0
+offset_bottom = 63.0
+
+[node name="Portrait" type="TextureRect" parent="." unique_id=1054600422]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+expand_mode = 1
+
+[node name="OrderIcon" type="TextureRect" parent="." unique_id=1734960923]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0

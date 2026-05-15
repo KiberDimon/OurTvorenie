@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="GuestData" format=3 uid="uid://6lcj56u7ajar"]
+
+[ext_resource type="Script" uid="uid://xnyy3k1u1ref" path="res://scripts/guest_data.gd" id="1_beatn"]
+[ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="2_gs0gt"]
+
+[resource]
+script = ExtResource("1_beatn")
+id = &"arahno"
+display_name = "Arahno"
+texture = ExtResource("2_gs0gt")
+metadata/_custom_type_script = "uid://xnyy3k1u1ref"

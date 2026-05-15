@@ -6,13 +6,16 @@ extends Control
 @onready var cream_cards = $IngredientList/CreamCards
 @onready var topping_cards = $IngredientList/ToppingCards
 @onready var tray: Control = $Tray 
+@onready var queue_manager: QueueManager = $QueueManager
+@onready var money_label: Label = $MoneyLabel
+var money: int = 0
 
 func _ready():
 	# Соединяем сигналы
 	cauldron.ingredient_added.connect(_on_ingredient_added)
 	cauldron.dessert_ready.connect(_on_dessert_ready)
 	cauldron.cleared.connect(_on_cauldron_cleared)
-	
+	queue_manager.guest_served.connect(_on_guest_served)
 	# Заполняем карточки из RecipeManager
 	_populate_cards()
 
@@ -48,6 +51,15 @@ func _on_cauldron_cleared():
 			card.mouse_filter = Control.MOUSE_FILTER_STOP
 			card.modulate = Color.WHITE
 
+func _on_guest_served(correct: bool, payment: int):
+	if correct:
+		money += payment
+		money_label.text = "Деньги: %d" % money
+		# Эффект: деньги летят в кассу
+	else:
+		# Эффект: гость уходит недовольный
+		pass
+		
 func _get_container_for(category: Ingredient.Category) -> Control:
 	match category:
 		Ingredient.Category.BASE:
