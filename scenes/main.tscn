@@ -1,13 +1,229 @@
 [gd_scene format=3 uid="uid://dbtiih3qvmdr2"]
 
 [ext_resource type="Script" uid="uid://d0pbo6ynaj6gl" path="res://scripts/main.gd" id="1_0wfyh"]
-[ext_resource type="PackedScene" uid="uid://bu6nnecjif58c" path="res://scenes/game_level.tscn" id="1_o5qli"]
+[ext_resource type="Texture2D" uid="uid://cp2quhe2nn2aj" path="res://assets/3 Ледяной котел/Мд анимация стола3.png" id="2_j2jfr"]
+[ext_resource type="Texture2D" uid="uid://dq22ooe7w1rw1" path="res://assets/3 Ледяной котел/Мд анимация стола4.png" id="3_bjg73"]
+[ext_resource type="Texture2D" uid="uid://ctmmi4qhxjjah" path="res://assets/3 Ледяной котел/Мд анимация стола5.png" id="4_bu4jf"]
+[ext_resource type="Texture2D" uid="uid://leuo1x4ma35y" path="res://assets/3 Ледяной котел/Мд анимация стола6.png" id="5_o7ddy"]
+[ext_resource type="Texture2D" uid="uid://cjdmrkl675x17" path="res://assets/3 Ледяной котел/Мд анимация стола7.png" id="6_0loja"]
+[ext_resource type="Texture2D" uid="uid://bfdfa6hdn276g" path="res://assets/3 Ледяной котел/Мд анимация стола8.png" id="7_ids8r"]
+[ext_resource type="Texture2D" uid="uid://jp7x6x0jvpfg" path="res://assets/3 Ледяной котел/Мд анимация стола9.png" id="8_dnhof"]
+[ext_resource type="Texture2D" uid="uid://dpawsp6ft7hvx" path="res://assets/3 Ледяной котел/Мд анимация стола10.png" id="9_1v6qk"]
+[ext_resource type="Texture2D" uid="uid://chvqpvthaj3xw" path="res://assets/3 Ледяной котел/Мд анимация стола11.png" id="10_augu2"]
+[ext_resource type="Texture2D" uid="uid://dk0nuopad6a04" path="res://assets/3 Ледяной котел/Мд анимация стола12.png" id="11_tm6hj"]
+[ext_resource type="Texture2D" uid="uid://dcfieokdnhqiw" path="res://assets/3 Ледяной котел/Мд анимация стола13.png" id="12_kf5aa"]
+[ext_resource type="Texture2D" uid="uid://d2l7wd7sjqd8g" path="res://assets/3 Ледяной котел/Мд анимация стола14.png" id="13_t5ykj"]
+[ext_resource type="Texture2D" uid="uid://bgf6mkbbgd226" path="res://assets/3 Ледяной котел/Мд анимация стола15.png" id="14_e755i"]
+[ext_resource type="Texture2D" uid="uid://cocxf8mc2jgt5" path="res://assets/3 Ледяной котел/Мд анимация стола16.png" id="15_ro3en"]
+[ext_resource type="Texture2D" uid="uid://y22s4tn0c5w7" path="res://assets/3 Ледяной котел/Мд анимация стола17.png" id="16_od4ux"]
+[ext_resource type="Texture2D" uid="uid://cngsd1wcc5uw1" path="res://assets/3 Ледяной котел/Мд анимация стола18.png" id="17_xhfw6"]
+[ext_resource type="Texture2D" uid="uid://dhuchqktopnsu" path="res://assets/1 Горячий котел/Мд анимация стола1.png" id="18_1epgm"]
+[ext_resource type="Texture2D" uid="uid://cir5qjbcm6umg" path="res://assets/1 Горячий котел/Мд анимация стола2.png" id="19_152kg"]
+[ext_resource type="Texture2D" uid="uid://by35650p1qswb" path="res://assets/1 Горячий котел/Мд анимация стола3.png" id="20_r4e17"]
+[ext_resource type="Texture2D" uid="uid://c0v7l1w4v4klb" path="res://assets/1 Горячий котел/Мд анимация стола4.png" id="21_y57op"]
+[ext_resource type="Texture2D" uid="uid://d252phtsxkpg" path="res://assets/1 Горячий котел/Мд анимация стола5.png" id="22_mlv25"]
+[ext_resource type="Texture2D" uid="uid://bi7gisxrudct8" path="res://assets/1 Горячий котел/Мд анимация стола6.png" id="23_a82wo"]
+[ext_resource type="Texture2D" uid="uid://c17882e6s5by6" path="res://assets/1 Горячий котел/Мд анимация стола7.png" id="24_gdvew"]
+[ext_resource type="Texture2D" uid="uid://bsuc8jtshllae" path="res://assets/1 Горячий котел/Мд анимация стола8.png" id="25_kjtvk"]
+[ext_resource type="Texture2D" uid="uid://dpowe6xsn8yy5" path="res://assets/1 Горячий котел/Мд анимация стола9.png" id="26_xrs0c"]
+[ext_resource type="Texture2D" uid="uid://dxrq8hu61jdcd" path="res://assets/1 Горячий котел/Мд анимация стола10.png" id="27_xljpf"]
+[ext_resource type="Texture2D" uid="uid://dpln6nbcb0ekn" path="res://assets/1 Горячий котел/Мд анимация стола11.png" id="28_j4bwh"]
+[ext_resource type="Texture2D" uid="uid://cu30gk4cajtnl" path="res://assets/1 Горячий котел/Мд анимация стола12.png" id="29_ksmap"]
+[ext_resource type="Texture2D" uid="uid://boi8inbyibfew" path="res://assets/1 Горячий котел/Мд анимация стола13.png" id="30_ygd8o"]
+[ext_resource type="Texture2D" uid="uid://b7l6xjodmqded" path="res://assets/1 Горячий котел/Мд анимация стола14.png" id="31_2s0kr"]
+[ext_resource type="Texture2D" uid="uid://bve1nu54722s2" path="res://assets/1 Горячий котел/Мд анимация стола15.png" id="32_xaipn"]
+[ext_resource type="Texture2D" uid="uid://c0ctdw1gc4ult" path="res://assets/1 Горячий котел/Мд анимация стола16.png" id="33_ndrjj"]
+[ext_resource type="Texture2D" uid="uid://bgudt78c0f6ec" path="res://assets/2 Средний котел/Мд анимация стола2.png" id="34_ih3m7"]
+[ext_resource type="Texture2D" uid="uid://dogm30in0gaq5" path="res://assets/2 Средний котел/Мд анимация стола3.png" id="35_11yus"]
+[ext_resource type="Texture2D" uid="uid://bca862nw0spf0" path="res://assets/2 Средний котел/Мд анимация стола4.png" id="36_b6ruc"]
+[ext_resource type="Texture2D" uid="uid://h2jabs13elh5" path="res://assets/2 Средний котел/Мд анимация стола5.png" id="37_155or"]
+[ext_resource type="Texture2D" uid="uid://dd3tqg1maiq3d" path="res://assets/2 Средний котел/Мд анимация стола6.png" id="38_vtx2l"]
+[ext_resource type="Texture2D" uid="uid://bxlbrmmfmr35q" path="res://assets/2 Средний котел/Мд анимация стола7.png" id="39_63lxy"]
+[ext_resource type="Texture2D" uid="uid://cw7gwus0x52ce" path="res://assets/2 Средний котел/Мд анимация стола8.png" id="40_fjhjs"]
+[ext_resource type="Texture2D" uid="uid://bk23lml52vlq0" path="res://assets/2 Средний котел/Мд анимация стола9.png" id="41_bfu41"]
+[ext_resource type="Texture2D" uid="uid://dodqmjprampa1" path="res://assets/2 Средний котел/Мд анимация стола10.png" id="42_r4ag1"]
+[ext_resource type="Texture2D" uid="uid://5g4lus0j08cx" path="res://assets/2 Средний котел/Мд анимация стола11.png" id="43_v0wtd"]
+[ext_resource type="Texture2D" uid="uid://cc0s5cg6ldepp" path="res://assets/2 Средний котел/Мд анимация стола12.png" id="44_sgvw8"]
+[ext_resource type="Texture2D" uid="uid://ceq25l5i0d4ae" path="res://assets/2 Средний котел/Мд анимация стола13.png" id="45_6nfnn"]
+[ext_resource type="Texture2D" uid="uid://dnmqqxkoqqsrj" path="res://assets/2 Средний котел/Мд анимация стола14.png" id="46_4ue30"]
+[ext_resource type="Texture2D" uid="uid://byp3loop1jjlg" path="res://assets/2 Средний котел/Мд анимация стола15.png" id="47_k42av"]
+[ext_resource type="Texture2D" uid="uid://bqlbgl0i1ipb0" path="res://assets/2 Средний котел/Мд анимация стола16.png" id="48_gr8w0"]
+[ext_resource type="Texture2D" uid="uid://d4knm1gp51vuq" path="res://assets/2 Средний котел/Мд анимация стола17.png" id="49_673bd"]
+[ext_resource type="Script" uid="uid://cfvc8p0oldf3t" path="res://scripts/table.gd" id="50_akjxb"]
+[ext_resource type="PackedScene" uid="uid://bsy6hckwvqxh0" path="res://scenes/main_ui.tscn" id="51_bjg73"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vrx01"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_j2jfr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_bjg73")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_bu4jf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_o7ddy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_0loja")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ids8r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_dnhof")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_1v6qk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_augu2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_tm6hj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_kf5aa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_t5ykj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_e755i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_ro3en")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_od4ux")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_xhfw6")
+}],
+"loop": true,
+"name": &"cold",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_1epgm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_152kg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_r4e17")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_y57op")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_mlv25")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_a82wo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_gdvew")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_kjtvk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_xrs0c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_xljpf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_j4bwh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_ksmap")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_ygd8o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_2s0kr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_xaipn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_ndrjj")
+}],
+"loop": true,
+"name": &"hot",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("34_ih3m7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_11yus")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_b6ruc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_155or")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_vtx2l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_63lxy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_fjhjs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_bfu41")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_r4ag1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_v0wtd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_sgvw8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_6nfnn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_4ue30")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_k42av")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_gr8w0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_673bd")
+}],
+"loop": true,
+"name": &"medium",
+"speed": 12.0
+}]
 
 [node name="Main" type="Node2D" unique_id=1865117869]
 script = ExtResource("1_0wfyh")
 
-[node name="GameLevel" parent="." unique_id=765427999 instance=ExtResource("1_o5qli")]
-visible = false
+[node name="Table" type="AnimatedSprite2D" parent="." unique_id=1515120844]
+position = Vector2(240, 135)
+sprite_frames = SubResource("SpriteFrames_vrx01")
+animation = &"cold"
+frame = 12
+frame_progress = 0.43362924
+script = ExtResource("50_akjxb")
 
 [node name="Menu" type="Control" parent="." unique_id=739919620]
 layout_mode = 3
@@ -30,5 +246,7 @@ offset_top = 136.0
 offset_right = 296.0
 offset_bottom = 167.0
 text = "Exit"
+
+[node name="MainUI" parent="." unique_id=1500070565 instance=ExtResource("51_bjg73")]
 
 [connection signal="pressed" from="Menu/Start" to="." method="_on_start_pressed"]

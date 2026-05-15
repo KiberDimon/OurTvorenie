@@ -3,12 +3,17 @@
 [ext_resource type="Script" uid="uid://b26f8h7bhyy3m" path="res://scripts/main_ui.gd" id="1_r8eje"]
 [ext_resource type="Script" uid="uid://dtg633bapwlsv" path="res://scripts/cauldron.gd" id="2_i1gbh"]
 [ext_resource type="Resource" uid="uid://dnqynwy6kba1f" path="res://resources/ingredients/topping/eye_topping.tres" id="2_j6a7c"]
+[ext_resource type="Texture2D" uid="uid://dogm30in0gaq5" path="res://assets/2 Средний котел/Мд анимация стола3.png" id="2_rbpqj"]
 [ext_resource type="Resource" uid="uid://ouenind7kr8c" path="res://resources/ingredients/cream/mud_cream.tres" id="3_scoti"]
 [ext_resource type="Resource" uid="uid://bq28vpp5ert15" path="res://resources/ingredients/base/muffin_base.tres" id="4_i1gbh"]
 [ext_resource type="Resource" uid="uid://d2nfvcckhbp1v" path="res://resources/ingredients/base/cornet_base.tres" id="5_bn1ek"]
+[ext_resource type="Resource" uid="uid://cmqodu2axiigi" path="res://resources/ingredients/topping/worm_topping.tres" id="7_4yyl0"]
 [ext_resource type="Resource" uid="uid://bxfc4kigpgbhc" path="res://resources/ingredients/base/cocktail_base.tres" id="7_eb3wa"]
+[ext_resource type="Resource" uid="uid://c6egtfrev1eo0" path="res://resources/ingredients/topping/fly_topping.tres" id="8_wn4yt"]
+[ext_resource type="Resource" uid="uid://c1csr75axlrrq" path="res://resources/ingredients/cream/blood_cream.tres" id="10_32s7f"]
 [ext_resource type="Script" uid="uid://bc0q8vyjg4nnf" path="res://scripts/queue_manager.gd" id="10_82kx8"]
 [ext_resource type="PackedScene" uid="uid://b63ia4ah2tngg" path="res://scenes/ingredient_card.tscn" id="10_r0apq"]
+[ext_resource type="Resource" uid="uid://ddcr68lor2b18" path="res://resources/ingredients/cream/mold_cream.tres" id="11_26nsp"]
 [ext_resource type="PackedScene" uid="uid://c0tvswio13s16" path="res://scenes/guest_slot.tscn" id="11_j03cv"]
 [ext_resource type="Script" uid="uid://8hxo61u7kwkr" path="res://scripts/guest_pool.gd" id="11_jnl7h"]
 [ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="11_r0apq"]
@@ -16,6 +21,7 @@
 [ext_resource type="Resource" uid="uid://csm6ok0fww6ea" path="res://resources/guests/rider.tres" id="13_j03cv"]
 [ext_resource type="Resource" uid="uid://6lcj56u7ajar" path="res://resources/guests/arahno.tres" id="14_rbpqj"]
 [ext_resource type="Resource" uid="uid://d0x4iarce7skw" path="res://resources/guests/lurker.tres" id="15_eigca"]
+[ext_resource type="Resource" uid="uid://b7lsv3jtrhxgs" path="res://resources/ingredients/base/waffle_base.tres" id="15_wn4yt"]
 [ext_resource type="Resource" uid="uid://108cqji8i2p0" path="res://resources/guests/zombie.tres" id="16_tshsl"]
 [ext_resource type="Resource" uid="uid://0bvn2q0byoxn" path="res://resources/guests/shkelet.tres" id="17_1t7kk"]
 
@@ -28,6 +34,11 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_r8eje")
 
+[node name="tabl" type="Sprite2D" parent="." unique_id=639964491]
+visible = false
+position = Vector2(240, 135)
+texture = ExtResource("2_rbpqj")
+
 [node name="Tray" type="Control" parent="." unique_id=1960852670]
 anchors_preset = 0
 offset_left = 346.0
@@ -37,13 +48,15 @@ offset_bottom = 71.0
 
 [node name="Cauldron" type="Control" parent="." unique_id=1331123795]
 anchors_preset = 0
-offset_left = 404.0
-offset_top = 269.0
-offset_right = 444.0
-offset_bottom = 309.0
+offset_left = 174.0
+offset_top = 188.0
+offset_right = 214.0
+offset_bottom = 228.0
+scale = Vector2(3.2849627, 1.6378204)
 script = ExtResource("2_i1gbh")
 
 [node name="TextureRect" type="TextureRect" parent="Cauldron" unique_id=1183088268]
+visible = false
 layout_mode = 0
 offset_left = -108.0
 offset_top = -130.0
@@ -64,18 +77,21 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="EyeTopping" parent="IngredientList/ToppingCards" unique_id=336169828 instance=ExtResource("10_r0apq")]
+custom_minimum_size = Vector2(40, 30)
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.1
-anchor_top = 4.275
-anchor_right = 0.1
-anchor_bottom = 4.275
+anchor_left = 8.724999
+anchor_top = 1.9500002
+anchor_right = 9.724999
+anchor_bottom = 2.7000003
 offset_right = 0.0
 offset_bottom = 0.0
+scale = Vector2(1.09747, 1.8049072)
 ingredient = ExtResource("2_j6a7c")
 metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect" type="TextureRect" parent="IngredientList/ToppingCards/EyeTopping" unique_id=419315689]
+visible = false
 layout_mode = 0
 offset_left = 166.0
 offset_top = -91.0
@@ -85,6 +101,24 @@ scale = Vector2(1.2087102, 1.2710161)
 texture = ExtResource("11_r0apq")
 expand_mode = 1
 
+[node name="WormTopping" parent="IngredientList/ToppingCards" unique_id=1288450862 instance=ExtResource("10_r0apq")]
+layout_mode = 0
+offset_left = 296.0
+offset_top = 83.0
+offset_right = 336.0
+offset_bottom = 123.0
+scale = Vector2(1.1739043, 1.1663173)
+ingredient = ExtResource("7_4yyl0")
+
+[node name="FlyTopping" parent="IngredientList/ToppingCards" unique_id=637584190 instance=ExtResource("10_r0apq")]
+layout_mode = 0
+offset_left = 338.0
+offset_top = 137.0
+offset_right = 378.0
+offset_bottom = 177.0
+scale = Vector2(2.3991923, 0.60269725)
+ingredient = ExtResource("8_wn4yt")
+
 [node name="CreamCards" type="Control" parent="IngredientList" unique_id=1625447925]
 anchors_preset = 0
 offset_right = 40.0
@@ -92,13 +126,15 @@ offset_bottom = 40.0
 
 [node name="MudCream" parent="IngredientList/CreamCards" unique_id=172219015 instance=ExtResource("10_r0apq")]
 layout_mode = 0
-offset_left = 37.0
-offset_top = 30.0
-offset_right = 77.0
-offset_bottom = 70.0
+offset_left = 143.0
+offset_top = 109.0
+offset_right = 183.0
+offset_bottom = 149.0
+scale = Vector2(0.85096693, 0.88142914)
 ingredient = ExtResource("3_scoti")
 
 [node name="TextureRect" type="TextureRect" parent="IngredientList/CreamCards/MudCream" unique_id=1768565590]
+visible = false
 layout_mode = 0
 offset_left = 59.0
 offset_top = 58.0
@@ -107,6 +143,24 @@ offset_bottom = 95.0
 texture = ExtResource("11_r0apq")
 expand_mode = 1
 
+[node name="BloodCream" parent="IngredientList/CreamCards" unique_id=1672085639 instance=ExtResource("10_r0apq")]
+layout_mode = 0
+offset_left = 112.00001
+offset_top = 130.0
+offset_right = 152.0
+offset_bottom = 170.0
+scale = Vector2(0.8446563, 0.87727886)
+ingredient = ExtResource("10_32s7f")
+
+[node name="MoldCream" parent="IngredientList/CreamCards" unique_id=1072872274 instance=ExtResource("10_r0apq")]
+layout_mode = 0
+offset_left = 89.0
+offset_top = 164.0
+offset_right = 129.0
+offset_bottom = 204.0
+scale = Vector2(0.81265706, 0.893126)
+ingredient = ExtResource("11_26nsp")
+
 [node name="BaseCards" type="Control" parent="IngredientList" unique_id=1027731840]
 anchors_preset = 0
 offset_right = 40.0
@@ -114,13 +168,15 @@ offset_bottom = 40.0
 
 [node name="MuffinBase" parent="IngredientList/BaseCards" unique_id=414454154 instance=ExtResource("10_r0apq")]
 layout_mode = 0
-offset_left = 175.0
-offset_top = 144.0
-offset_right = 215.0
-offset_bottom = 184.0
+offset_left = 16.0
+offset_top = 169.0
+offset_right = 56.0
+offset_bottom = 209.0
+scale = Vector2(1.6019263, 1.1915456)
 ingredient = ExtResource("4_i1gbh")
 
 [node name="TextureRect" type="TextureRect" parent="IngredientList/BaseCards/MuffinBase" unique_id=240757921]
+visible = false
 layout_mode = 0
 offset_left = -156.0
 offset_top = 9.0
@@ -131,9 +187,15 @@ expand_mode = 1
 
 [node name="CocktailBase" parent="IngredientList/BaseCards" unique_id=398732684 instance=ExtResource("10_r0apq")]
 layout_mode = 0
+offset_left = 73.0
+offset_top = 68.00001
+offset_right = 113.0
+offset_bottom = 108.00001
+scale = Vector2(1.1226054, 1.4538015)
 ingredient = ExtResource("7_eb3wa")
 
 [node name="TextureRect" type="TextureRect" parent="IngredientList/BaseCards/CocktailBase" unique_id=1622243172]
+visible = false
 layout_mode = 0
 offset_left = 21.0
 offset_top = 84.0
@@ -144,9 +206,15 @@ expand_mode = 1
 
 [node name="CornetBase" parent="IngredientList/BaseCards" unique_id=1688859407 instance=ExtResource("10_r0apq")]
 layout_mode = 0
+offset_left = 22.0
+offset_top = 74.0
+offset_right = 62.0
+offset_bottom = 114.0
+scale = Vector2(1.0469915, 1.3976116)
 ingredient = ExtResource("5_bn1ek")
 
 [node name="TextureRect" type="TextureRect" parent="IngredientList/BaseCards/CornetBase" unique_id=1712398417]
+visible = false
 layout_mode = 0
 offset_left = 21.0
 offset_top = 211.0
@@ -157,13 +225,15 @@ expand_mode = 1
 
 [node name="WaffleBase" parent="IngredientList/BaseCards" unique_id=1163954026 instance=ExtResource("10_r0apq")]
 layout_mode = 0
-offset_left = 175.0
-offset_top = 144.0
-offset_right = 215.0
-offset_bottom = 184.0
-ingredient = ExtResource("4_i1gbh")
+offset_left = 48.000004
+offset_top = 130.0
+offset_right = 88.0
+offset_bottom = 170.0
+scale = Vector2(1.1653568, 0.7828255)
+ingredient = ExtResource("15_wn4yt")
 
 [node name="TextureRect" type="TextureRect" parent="IngredientList/BaseCards/WaffleBase" unique_id=310053459]
+visible = false
 layout_mode = 0
 offset_left = -159.0
 offset_top = -113.0
@@ -184,6 +254,7 @@ script = ExtResource("11_jnl7h")
 all_guests = Array[ExtResource("12_rx44x")]([ExtResource("13_j03cv"), ExtResource("14_rbpqj"), ExtResource("15_eigca"), ExtResource("16_tshsl"), ExtResource("17_1t7kk")])
 
 [node name="SlotContainer" type="HBoxContainer" parent="QueueManager" unique_id=600424774]
+visible = false
 layout_mode = 0
 offset_left = 79.0
 offset_top = 2.0

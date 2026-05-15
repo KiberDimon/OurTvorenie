@@ -3,6 +3,7 @@ extends Control
 
 signal ingredient_added(category: Ingredient.Category)
 signal dessert_ready(result: DessertResult)
+signal base_dropped(base_name: String)
 signal cleared()
 
 var _current: Dictionary = {}  # Category (int) -> Ingredient
@@ -17,7 +18,9 @@ func _can_drop_data(at_position: Vector2, data: Variant) -> bool:
 func _drop_data(at_position: Vector2, data: Variant) -> void:
 	var ingredient: Ingredient = data["ingredient"]
 	_current[ingredient.category] = ingredient
-	
+	if ingredient.category == Ingredient.Category.BASE:
+		print("В котел упала основа с ID: ", ingredient.id)
+		base_dropped.emit(ingredient.id)
 	# Сообщаем UI: «категория занята»
 	ingredient_added.emit(ingredient.category)
 	
