@@ -51,7 +51,6 @@
 [ext_resource type="Texture2D" uid="uid://d4knm1gp51vuq" path="res://assets/2 Средний котел/Мд анимация стола17.png" id="49_673bd"]
 [ext_resource type="Script" uid="uid://cfvc8p0oldf3t" path="res://scripts/table.gd" id="50_akjxb"]
 [ext_resource type="PackedScene" uid="uid://bsy6hckwvqxh0" path="res://scenes/main_ui.tscn" id="51_bjg73"]
-[ext_resource type="Texture2D" uid="uid://bmrcvs714oek5" path="res://assets/Ингридиенты и курсор.png" id="52_bu4jf"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vrx01"]
 animations = [{
@@ -215,17 +214,6 @@ animations = [{
 "speed": 12.0
 }]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_o7ddy"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("52_bu4jf")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
 [node name="Main" type="Node2D" unique_id=1865117869]
 script = ExtResource("1_0wfyh")
 
@@ -261,10 +249,5 @@ offset_bottom = 167.0
 text = "Exit"
 
 [node name="MainUI" parent="." unique_id=1500070565 instance=ExtResource("51_bjg73")]
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=313212352]
-position = Vector2(231, 53)
-sprite_frames = SubResource("SpriteFrames_o7ddy")
-frame_progress = 0.98069924
 
 [connection signal="pressed" from="Menu/Start" to="." method="_on_start_pressed"]
