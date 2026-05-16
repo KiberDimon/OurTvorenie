@@ -15,7 +15,6 @@ size_flags_horizontal = 3
 script = ExtResource("1_2hnih")
 
 [node name="GuestName" type="Label" parent="." unique_id=1195850699]
-visible = false
 z_index = 1
 layout_mode = 0
 offset_right = 40.0
@@ -29,12 +28,13 @@ offset_right = 40.0
 offset_bottom = 63.0
 
 [node name="Portrait" type="TextureRect" parent="." unique_id=1054600422]
+clip_contents = true
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
+expand_mode = 1
 
 [node name="OrderIcon" type="TextureRect" parent="." unique_id=1734960923]
-visible = false
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0

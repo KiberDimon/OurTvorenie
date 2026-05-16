@@ -14,7 +14,6 @@ var guest_data: GuestData
 func setup(guest: GuestData, dessert: DessertResult):
 	guest_data = guest
 	ordered_dessert = dessert
-	
 	portrait.texture = guest.texture
 	order_icon.texture = dessert.texture
 	order_name.text = dessert.display_name

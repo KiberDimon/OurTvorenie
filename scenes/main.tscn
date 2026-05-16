@@ -215,7 +215,7 @@ animations = [{
 }]
 
 [node name="Main" type="Node2D" unique_id=1865117869]
-scale = Vector2(2.400689, 2.3994293)
+scale = Vector2(0.8958379, 0.99997586)
 script = ExtResource("1_0wfyh")
 
 [node name="Menu" type="Control" parent="." unique_id=739919620]

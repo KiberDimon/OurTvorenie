@@ -1,11 +1,15 @@
 [gd_resource type="Resource" script_class="GuestData" format=3 uid="uid://csm6ok0fww6ea"]
 
 [ext_resource type="Script" uid="uid://xnyy3k1u1ref" path="res://scripts/guest_data.gd" id="1_r8ug4"]
-[ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="2_o6mve"]
+[ext_resource type="Texture2D" uid="uid://8y1wtnnij1bq" path="res://assets/Все гости.png" id="2_o6mve"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_01c4a"]
+atlas = ExtResource("2_o6mve")
+region = Rect2(373, 0, 143, 141)
 
 [resource]
 script = ExtResource("1_r8ug4")
 id = &"rider"
 display_name = "Rider"
-texture = ExtResource("2_o6mve")
+texture = SubResource("AtlasTexture_01c4a")
 metadata/_custom_type_script = "uid://xnyy3k1u1ref"
