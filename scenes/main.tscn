@@ -215,15 +215,8 @@ animations = [{
 }]
 
 [node name="Main" type="Node2D" unique_id=1865117869]
+scale = Vector2(2.400689, 2.3994293)
 script = ExtResource("1_0wfyh")
-
-[node name="Table" type="AnimatedSprite2D" parent="." unique_id=1515120844]
-position = Vector2(240, 135)
-sprite_frames = SubResource("SpriteFrames_vrx01")
-animation = &"cold"
-frame = 12
-frame_progress = 0.43362924
-script = ExtResource("50_akjxb")
 
 [node name="Menu" type="Control" parent="." unique_id=739919620]
 visible = false
@@ -249,5 +242,14 @@ offset_bottom = 167.0
 text = "Exit"
 
 [node name="MainUI" parent="." unique_id=1500070565 instance=ExtResource("51_bjg73")]
+
+[node name="Table" type="AnimatedSprite2D" parent="." unique_id=1515120844]
+position = Vector2(240, 135)
+scale = Vector2(0.99999994, 0.99999994)
+sprite_frames = SubResource("SpriteFrames_vrx01")
+animation = &"cold"
+frame = 12
+frame_progress = 0.43362924
+script = ExtResource("50_akjxb")
 
 [connection signal="pressed" from="Menu/Start" to="." method="_on_start_pressed"]

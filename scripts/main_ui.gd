@@ -51,6 +51,7 @@ func _on_cauldron_cleared():
 			card.mouse_filter = Control.MOUSE_FILTER_STOP
 			card.modulate = Color.WHITE
 
+
 func _on_guest_served(correct: bool, payment: int):
 	if correct:
 		money += payment

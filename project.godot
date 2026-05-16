@@ -21,8 +21,7 @@ RecipeManager="*uid://btng08m3sy3a2"
 
 [display]
 
-window/size/viewport_width=480
-window/size/viewport_height=270
+mouse_cursor/custom_image="uid://dg2kpxcbgmg1c"
 
 [physics]
 
