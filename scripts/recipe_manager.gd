@@ -8,9 +8,9 @@ var _recipe_map: Dictionary = {}
 
 func _ready():
 	_build_recipe_map()
-	print("=== RecipeManager ready ===")
-	print("Рецептов в массиве: ", recipes.size())
-	print("Ключей в мапе: ", _recipe_map.size())
+	#print("=== RecipeManager ready ===")
+	#print("Рецептов в массиве: ", recipes.size())
+	#print("Ключей в мапе: ", _recipe_map.size())
 
 func _build_recipe_map():
 	_recipe_map.clear()
@@ -25,7 +25,7 @@ func _build_recipe_map():
 		var t_id = recipe.topping.id
 		var key = _make_key(b_id, c_id, t_id)
 		
-		print("Добавляю: ", key, " | result=", recipe.result.display_name if recipe.result else "NULL")
+		#print("Добавляю: ", key, " | result=", recipe.result.display_name if recipe.result else "NULL")
 		_recipe_map[key] = recipe
 
 func get_result(base_id: StringName, cream_id: StringName, topping_id: StringName) -> DessertResult:

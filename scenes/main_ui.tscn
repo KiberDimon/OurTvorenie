@@ -14,7 +14,6 @@
 [ext_resource type="Script" uid="uid://bc0q8vyjg4nnf" path="res://scripts/queue_manager.gd" id="10_82kx8"]
 [ext_resource type="PackedScene" uid="uid://b63ia4ah2tngg" path="res://scenes/ingredient_card.tscn" id="10_r0apq"]
 [ext_resource type="Resource" uid="uid://ddcr68lor2b18" path="res://resources/ingredients/cream/mold_cream.tres" id="11_26nsp"]
-[ext_resource type="PackedScene" uid="uid://c0tvswio13s16" path="res://scenes/guest_slot.tscn" id="11_j03cv"]
 [ext_resource type="Script" uid="uid://8hxo61u7kwkr" path="res://scripts/guest_pool.gd" id="11_jnl7h"]
 [ext_resource type="Script" uid="uid://xnyy3k1u1ref" path="res://scripts/guest_data.gd" id="12_rx44x"]
 [ext_resource type="Resource" uid="uid://csm6ok0fww6ea" path="res://resources/guests/rider.tres" id="13_j03cv"]
@@ -52,7 +51,6 @@ anchors_preset = 0
 script = ExtResource("10_82kx8")
 guest_pool = NodePath("GuestPool")
 slot_container = NodePath("SlotContainer")
-guest_scene = ExtResource("11_j03cv")
 
 [node name="GuestPool" type="Node" parent="QueueManager" unique_id=38253915]
 script = ExtResource("11_jnl7h")
