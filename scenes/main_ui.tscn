@@ -192,7 +192,8 @@ theme_override_constants/separation = 128
 
 [node name="MoneyLabel" type="Label" parent="." unique_id=1409963451]
 layout_mode = 0
-offset_left = 144.0
-offset_top = 236.0
-offset_right = 184.0
-offset_bottom = 259.0
+offset_left = 410.0
+offset_top = 97.0
+offset_right = 450.0
+offset_bottom = 120.0
+scale = Vector2(0.87106186, 0.43092862)

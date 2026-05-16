@@ -1,11 +1,15 @@
 [gd_resource type="Resource" script_class="Ingredient" format=3 uid="uid://ddcr68lor2b18"]
 
 [ext_resource type="Script" uid="uid://dk2fbttw857vm" path="res://scripts/ingredient.gd" id="1_qaqgr"]
-[ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="2_pg82g"]
+[ext_resource type="Texture2D" uid="uid://bmrcvs714oek5" path="res://assets/Ингридиенты и курсор.png" id="2_pg82g"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cccq1"]
+atlas = ExtResource("2_pg82g")
+region = Rect2(49, 0, 25, 53)
 
 [resource]
 script = ExtResource("1_qaqgr")
 id = &"mold_cream"
 display_name = "Mold"
 category = 1
-texture = ExtResource("2_pg82g")
+texture = SubResource("AtlasTexture_cccq1")

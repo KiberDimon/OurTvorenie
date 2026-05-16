@@ -1,12 +1,16 @@
 [gd_resource type="Resource" script_class="Ingredient" format=3 uid="uid://ouenind7kr8c"]
 
 [ext_resource type="Script" uid="uid://dk2fbttw857vm" path="res://scripts/ingredient.gd" id="1_2yq5n"]
-[ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="2_f31v2"]
+[ext_resource type="Texture2D" uid="uid://bmrcvs714oek5" path="res://assets/Ингридиенты и курсор.png" id="2_2yq5n"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f31v2"]
+atlas = ExtResource("2_2yq5n")
+region = Rect2(0, 0, 24, 53)
 
 [resource]
 script = ExtResource("1_2yq5n")
 id = &"mud_cream"
 display_name = "Mud"
 category = 1
-texture = ExtResource("2_f31v2")
+texture = SubResource("AtlasTexture_f31v2")
 metadata/_custom_type_script = "uid://dk2fbttw857vm"

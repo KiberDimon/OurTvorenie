@@ -54,7 +54,7 @@ func _on_cauldron_cleared():
 func _on_guest_served(correct: bool, payment: int):
 	if correct:
 		money += payment
-		money_label.text = "Деньги: %d" % money
+		money_label.text = " %d" % money
 		# Эффект: деньги летят в кассу
 	else:
 		# Эффект: гость уходит недовольный
