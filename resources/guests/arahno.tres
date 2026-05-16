@@ -10,6 +10,6 @@ region = Rect2(0, 0, 82, 141)
 [resource]
 script = ExtResource("1_beatn")
 id = &"arahno"
-display_name = "Arahno"
+display_name = "Arahno_10"
 texture = SubResource("AtlasTexture_6aidr")
 metadata/_custom_type_script = "uid://xnyy3k1u1ref"

@@ -28,6 +28,11 @@ window/size/window_height_override=810
 window/stretch/mode="canvas_items"
 mouse_cursor/custom_image="uid://c3dnjcpaas0p3"
 
+[gui]
+
+theme/default_font_antialiasing=0
+theme/custom_font="uid://ck1fk0264axwf"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
