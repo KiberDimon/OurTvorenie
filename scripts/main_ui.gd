@@ -8,7 +8,10 @@ extends Control
 @onready var tray: Control = $Tray 
 @onready var queue_manager: QueueManager = $QueueManager
 @onready var money_label: Label = $MoneyLabel
+@onready var toggle_orders_button: Button = $ToggleOrdersButton
 var money: int = 0
+var _orders_visible: bool = false
+
 
 func _ready():
 	# Соединяем сигналы
@@ -16,6 +19,7 @@ func _ready():
 	cauldron.dessert_ready.connect(_on_dessert_ready)
 	cauldron.cleared.connect(_on_cauldron_cleared)
 	queue_manager.guest_served.connect(_on_guest_served)
+	toggle_orders_button.pressed.connect(_on_toggle_orders)
 	# Заполняем карточки из RecipeManager
 	_populate_cards()
 
@@ -51,7 +55,6 @@ func _on_cauldron_cleared():
 			card.mouse_filter = Control.MOUSE_FILTER_STOP
 			card.modulate = Color.WHITE
 
-
 func _on_guest_served(correct: bool, payment: int):
 	if correct:
 		money += payment
@@ -60,7 +63,7 @@ func _on_guest_served(correct: bool, payment: int):
 	else:
 		# Эффект: гость уходит недовольный
 		pass
-		
+
 func _get_container_for(category: Ingredient.Category) -> Control:
 	match category:
 		Ingredient.Category.BASE:
@@ -72,3 +75,10 @@ func _get_container_for(category: Ingredient.Category) -> Control:
 		_:
 			push_error("Неизвестная категория: " + str(category))
 			return null
+
+func _on_toggle_orders():
+	_orders_visible = not _orders_visible
+	if _orders_visible:
+		queue_manager.show_all_orders()
+	else:
+		queue_manager.hide_all_orders()

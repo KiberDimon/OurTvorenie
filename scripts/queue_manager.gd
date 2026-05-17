@@ -19,7 +19,7 @@ func _ready():
 func _spawn_initial_guests():
 	for i in range(max_slots):
 		var slot = _create_slot()
-		slot.appear(0.0)  # первый гость появляется мгновенно
+		slot.appear(0.8)  # первый гость появляется мгновенно
 		slot._on_appearance_finished()  # мгновенное завершение, без анимации
 
 func _create_slot() -> GuestSlot:
@@ -65,3 +65,11 @@ func _on_guest_served(slot: GuestSlot, correct: bool):
 	
 	# Запускаем анимацию ухода гостя
 	slot.disappear(disappear_duration)
+
+func show_all_orders():
+	for slot in _slots:
+		slot.show_order()
+
+func hide_all_orders():
+	for slot in _slots:
+		slot.hide_order()

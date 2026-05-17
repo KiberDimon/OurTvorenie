@@ -33,7 +33,6 @@ grow_vertical = 2
 script = ExtResource("1_r8eje")
 
 [node name="tabl" type="Sprite2D" parent="." unique_id=639964491]
-visible = false
 position = Vector2(241, 135)
 texture = ExtResource("2_rbpqj")
 
@@ -51,6 +50,9 @@ anchors_preset = 0
 script = ExtResource("10_82kx8")
 guest_pool = NodePath("GuestPool")
 slot_container = NodePath("SlotContainer")
+max_slots = null
+appear_duration = null
+disappear_duration = null
 
 [node name="GuestPool" type="Node" parent="QueueManager" unique_id=38253915]
 script = ExtResource("11_jnl7h")
@@ -199,3 +201,10 @@ offset_right = 446.0
 offset_bottom = 108.0
 horizontal_alignment = 2
 vertical_alignment = 1
+
+[node name="ToggleOrdersButton" type="Button" parent="." unique_id=389624870]
+layout_mode = 0
+offset_left = 447.0
+offset_top = 97.0
+offset_right = 455.0
+offset_bottom = 105.0

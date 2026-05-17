@@ -13,6 +13,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 script = ExtResource("1_2hnih")
+metadata/_edit_vertical_guides_ = [-22.0]
 
 [node name="GuestName" type="Label" parent="." unique_id=1195850699]
 visible = false
@@ -21,20 +22,22 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
 
-[node name="OrderName" type="Label" parent="." unique_id=428579326]
-z_index = 1
-layout_mode = 0
-offset_top = 40.0
-offset_right = 40.0
-offset_bottom = 63.0
-
 [node name="Portrait" type="TextureRect" parent="." unique_id=1054600422]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="OrderIcon" type="TextureRect" parent="." unique_id=1734960923]
-visible = false
 layout_mode = 0
-offset_right = 40.0
+offset_left = -22.0
+offset_right = 18.0
 offset_bottom = 40.0
+expand_mode = 1
+
+[node name="OrderName" type="Label" parent="." unique_id=428579326]
+z_index = 1
+layout_mode = 0
+offset_left = -22.0
+offset_top = 40.0
+offset_right = 18.0
+offset_bottom = 63.0
