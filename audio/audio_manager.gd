@@ -13,18 +13,15 @@ var _ui_player: AudioStreamPlayer
 var _sfx_players: Array[AudioStreamPlayer] = []
 var _named_players: Dictionary = {} 
 
-# Настройки громкости по умолчанию (0.0 — тихо, 1.0 — максимум)
-var music_volume: float = 0.8
-var sfx_volume:   float = 1.0
-var ui_volume:    float = 1.0
+
 
 
 func _ready() -> void:
 	_create_music_player()
 	_create_ui_player()
-	_apply_all_volumes()
-# --- Музыка ---
 
+
+# --- Музыка ---
 func play_music(stream: AudioStream) -> void:
 	if _music_player.stream == stream and _music_player.playing:
 		return  # Этот трек уже играет
@@ -87,21 +84,6 @@ func _create_ui_player() -> void:
 	_ui_player = AudioStreamPlayer.new()
 	_ui_player.bus = BUS_UI
 	add_child(_ui_player)
-# --- Громкость ---
-
-func set_music_volume(value: float) -> void:
-	music_volume = clampf(value, 0.0, 1.0)
-	_set_bus_volume(BUS_MUSIC, music_volume)
-
-
-func set_sfx_volume(value: float) -> void:
-	sfx_volume = clampf(value, 0.0, 1.0)
-	_set_bus_volume(BUS_SFX, sfx_volume)
-
-
-func set_ui_volume(value: float) -> void:
-	ui_volume = clampf(value, 0.0, 1.0)
-	_set_bus_volume(BUS_UI, ui_volume)
 
 
 func _set_bus_volume(bus_name: String, linear_value: float) -> void:
@@ -113,10 +95,7 @@ func _set_bus_volume(bus_name: String, linear_value: float) -> void:
 	AudioServer.set_bus_volume_db(bus_index, linear_to_db(linear_value))
 
 
-func _apply_all_volumes() -> void:
-	_set_bus_volume(BUS_MUSIC, music_volume)
-	_set_bus_volume(BUS_SFX, sfx_volume)
-	_set_bus_volume(BUS_UI, ui_volume)
+
 
 # --- Именованные SFX (только один звук на имя) ---
 
