@@ -10,7 +10,8 @@ const NAMED_PLAYER := "cauldron"
 
 func _ready():
 	# Регистрируем плеер (безопасно вызывать много раз)
-	AudioManager.register_named_player(NAMED_PLAYER)
+	#ЛЕХА ТУТ ЗВУК КОТЛА ВСЕХ ТРЕХ===================================================
+	AudioManager.register_named_player(NAMED_PLAYER, 0.0)
 	
 	# При старте игры включаем средний огонь по умолчанию
 	play("medium")

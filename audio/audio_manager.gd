@@ -5,7 +5,7 @@ const BUS_MASTER := "Master"
 const BUS_MUSIC  := "Music"
 const BUS_SFX    := "SFX"
 const BUS_UI     := "UI"
-const BUS_COULDRON := "COULDRON"
+
 
 # Плееры, которые живут постоянно
 var _music_player: AudioStreamPlayer
@@ -43,13 +43,14 @@ func play_ui(stream: AudioStream) -> void:
 
 # --- Звуковые эффекты (могут накладываться) ---
 
-func play_sfx(stream: AudioStream) -> void:
+func play_sfx(stream: AudioStream, volume_db: float = 0.0) -> void:
 	# Ищем свободный плеер в пуле
 	var free_player := _find_free_sfx_player()
 	if free_player == null:
 		free_player = _create_sfx_player()
 	
 	free_player.stream = stream
+	free_player.volume_db = volume_db
 	free_player.play()
 	
 
@@ -85,27 +86,16 @@ func _create_ui_player() -> void:
 	_ui_player.bus = BUS_UI
 	add_child(_ui_player)
 
-
-func _set_bus_volume(bus_name: String, linear_value: float) -> void:
-	var bus_index := AudioServer.get_bus_index(bus_name)
-	if bus_index == -1:
-		push_error("AudioManager: шина '%s' не найдена" % bus_name)
-		return
-	# Преобразуем линейное значение в децибелы
-	AudioServer.set_bus_volume_db(bus_index, linear_to_db(linear_value))
-
-
-
-
 # --- Именованные SFX (только один звук на имя) ---
 
-func register_named_player(name: String) -> void:
+func register_named_player(name: String, volume_db: float) -> void:
 	#"""Создаёт плеер, к которому можно обращаться по имени."""
 	if _named_players.has(name):
 		return  # Уже зарегистрирован
 	
 	var player := AudioStreamPlayer.new()
 	player.bus = BUS_SFX
+	player.volume_db = volume_db
 	add_child(player)
 	_named_players[name] = player
 

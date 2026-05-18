@@ -4,7 +4,7 @@ extends Node
 @onready var cauldron = $MainUI/Cauldron
 @onready var table = $Table
 func _ready():
-	AudioManager.play_sfx(preload("res://audio/audio_assets/костер.mp3"))
+	AudioManager.play_sfx(preload("res://audio/audio_assets/костер.mp3"), 0.0)
 	cauldron.base_dropped.connect(table.change_fire_mode)
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	
