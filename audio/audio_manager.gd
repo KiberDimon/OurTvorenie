@@ -5,11 +5,13 @@ const BUS_MASTER := "Master"
 const BUS_MUSIC  := "Music"
 const BUS_SFX    := "SFX"
 const BUS_UI     := "UI"
+const BUS_COULDRON := "COULDRON"
 
 # Плееры, которые живут постоянно
 var _music_player: AudioStreamPlayer
 var _ui_player: AudioStreamPlayer
 var _sfx_players: Array[AudioStreamPlayer] = []
+var _named_players: Dictionary = {} 
 
 # Настройки громкости по умолчанию (0.0 — тихо, 1.0 — максимум)
 var music_volume: float = 0.8
@@ -52,6 +54,7 @@ func play_sfx(stream: AudioStream) -> void:
 	
 	free_player.stream = stream
 	free_player.play()
+	
 
 
 func _find_free_sfx_player() -> AudioStreamPlayer:
@@ -114,3 +117,32 @@ func _apply_all_volumes() -> void:
 	_set_bus_volume(BUS_MUSIC, music_volume)
 	_set_bus_volume(BUS_SFX, sfx_volume)
 	_set_bus_volume(BUS_UI, ui_volume)
+
+# --- Именованные SFX (только один звук на имя) ---
+
+func register_named_player(name: String) -> void:
+	#"""Создаёт плеер, к которому можно обращаться по имени."""
+	if _named_players.has(name):
+		return  # Уже зарегистрирован
+	
+	var player := AudioStreamPlayer.new()
+	player.bus = BUS_SFX
+	add_child(player)
+	_named_players[name] = player
+
+
+func play_named(name: String, stream: AudioStream) -> void:
+	#"""Проигрывает звук на именованном плеере. Предыдущий звук останавливается."""
+	if not _named_players.has(name):
+		push_error("AudioManager: именованный плеер '%s' не зарегистрирован" % name)
+		return
+	
+	var player: AudioStreamPlayer = _named_players[name]
+	player.stream = stream
+	player.play()
+
+
+func stop_named(name: String) -> void:
+	#"""Останавливает именованный плеер."""
+	if _named_players.has(name):
+		_named_players[name].stop()

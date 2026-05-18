@@ -1,16 +1,32 @@
 extends AnimatedSprite2D
+
+# Загружаем звуки заранее
+const SFX_COLD   = preload("res://audio/audio_assets/спокойное кипение.mp3")
+const SFX_MEDIUM = preload("res://audio/audio_assets/среднее кипение.mp3")
+const SFX_HOT    = preload("res://audio/audio_assets/сильное кипение.mp3")
+
+const NAMED_PLAYER := "cauldron"
+
+
 func _ready():
+	# Регистрируем плеер (безопасно вызывать много раз)
+	AudioManager.register_named_player(NAMED_PLAYER)
+	
 	# При старте игры включаем средний огонь по умолчанию
 	play("medium")
+	AudioManager.play_named(NAMED_PLAYER, SFX_MEDIUM)
 
-# Эту функцию вызываем, когда игрок закинул основу в котел
+
 func change_fire_mode(base_name: String):
-	
 	match base_name:
 		"cornet_base":
-			play("cold")    # Godot сам начнет крутить цикличную анимацию холода
+			play("cold")
+			AudioManager.play_named(NAMED_PLAYER, SFX_COLD)
+		
 		"cocktail_base":
 			play("medium")
-			  # Включается анимация маффина
-		"waffle_base","muffin_base":
-			play("hot")     # Включается максимальный огонь
+			AudioManager.play_named(NAMED_PLAYER, SFX_MEDIUM)
+		
+		"waffle_base", "muffin_base":
+			play("hot")
+			AudioManager.play_named(NAMED_PLAYER, SFX_HOT)
