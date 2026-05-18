@@ -31,7 +31,6 @@ window/size/viewport_height=270
 window/size/window_width_override=1290
 window/size/window_height_override=810
 window/stretch/mode="canvas_items"
-mouse_cursor/custom_image="uid://c3dnjcpaas0p3"
 
 [gui]
 
