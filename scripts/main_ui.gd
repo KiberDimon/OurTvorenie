@@ -5,7 +5,7 @@ extends Control
 @onready var base_cards = $IngredientList/BaseCards
 @onready var cream_cards = $IngredientList/CreamCards
 @onready var topping_cards = $IngredientList/ToppingCards
-@onready var tray: Control = $Tray 
+@onready var tray: Tray = $Tray 
 @onready var queue_manager: QueueManager = $QueueManager
 @onready var money_label: Label = $MoneyLabel
 @onready var toggle_orders_button: Button = $ToggleOrdersButton
@@ -47,6 +47,7 @@ func _on_dessert_ready(result: DessertResult):
 	var item: DessertItem = dessert_scene.instantiate()
 	item.setup(result)
 	tray.add_child(item)
+	tray.add_dessert(item)
 
 func _on_cauldron_cleared():
 	# Разблокируем все карточки для следующего приготовления

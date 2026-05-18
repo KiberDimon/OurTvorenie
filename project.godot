@@ -36,7 +36,7 @@ mouse_cursor/tooltip_position_offset=Vector2(10, -25)
 
 [gui]
 
-timers/tooltip_delay_sec=0.1
+timers/tooltip_delay_sec=0.05
 theme/default_font_antialiasing=0
 theme/custom_font="uid://ck1fk0264axwf"
 

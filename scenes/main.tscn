@@ -250,6 +250,7 @@ text = "Exit"
 [node name="MainUI" parent="." unique_id=1500070565 instance=ExtResource("51_bjg73")]
 
 [node name="Table" type="AnimatedSprite2D" parent="." unique_id=1515120844]
+z_index = -1
 position = Vector2(240, 135)
 scale = Vector2(0.99999994, 0.99999994)
 sprite_frames = SubResource("SpriteFrames_vrx01")

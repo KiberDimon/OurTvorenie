@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://b63ia4ah2tngg" path="res://scenes/ingredient_card.tscn" id="10_r0apq"]
 [ext_resource type="Resource" uid="uid://ddcr68lor2b18" path="res://resources/ingredients/cream/mold_cream.tres" id="11_26nsp"]
 [ext_resource type="Script" uid="uid://8hxo61u7kwkr" path="res://scripts/guest_pool.gd" id="11_jnl7h"]
+[ext_resource type="Script" uid="uid://0mb50pa65of5" path="res://scripts/tray.gd" id="12_4yyl0"]
 [ext_resource type="Script" uid="uid://xnyy3k1u1ref" path="res://scripts/guest_data.gd" id="12_rx44x"]
 [ext_resource type="Resource" uid="uid://csm6ok0fww6ea" path="res://resources/guests/rider.tres" id="13_j03cv"]
 [ext_resource type="Resource" uid="uid://6lcj56u7ajar" path="res://resources/guests/arahno.tres" id="14_rbpqj"]
@@ -22,6 +23,11 @@
 [ext_resource type="Resource" uid="uid://b7lsv3jtrhxgs" path="res://resources/ingredients/base/waffle_base.tres" id="15_wn4yt"]
 [ext_resource type="Resource" uid="uid://108cqji8i2p0" path="res://resources/guests/zombie.tres" id="16_tshsl"]
 [ext_resource type="Resource" uid="uid://0bvn2q0byoxn" path="res://resources/guests/shkelet.tres" id="17_1t7kk"]
+[ext_resource type="Texture2D" uid="uid://dnsbw8hdg83ow" path="res://assets/Карточки и паук.png" id="24_wn4yt"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_32s7f"]
+atlas = ExtResource("24_wn4yt")
+region = Rect2(92, 0, 17, 202)
 
 [node name="MainUI" type="Control" unique_id=1500070565]
 layout_mode = 3
@@ -64,12 +70,12 @@ offset_bottom = 16.0
 theme_override_constants/separation = 143
 
 [node name="Tray" type="Control" parent="." unique_id=1960852670]
-z_index = 1
 anchors_preset = 0
 offset_left = 220.0
-offset_top = 138.0
+offset_top = 168.0
 offset_right = 260.0
-offset_bottom = 178.0
+offset_bottom = 208.0
+script = ExtResource("12_4yyl0")
 
 [node name="IngredientList" type="Control" parent="." unique_id=183196154]
 anchors_preset = 0
@@ -170,9 +176,9 @@ ingredient = ExtResource("4_i1gbh")
 
 [node name="CocktailBase" parent="IngredientList/BaseCards" unique_id=398732684 instance=ExtResource("10_r0apq")]
 layout_mode = 0
-offset_left = 73.0
+offset_left = 70.0
 offset_top = 68.00001
-offset_right = 113.0
+offset_right = 114.53925
 offset_bottom = 108.00001
 scale = Vector2(1.1226054, 1.4538015)
 tooltip_text = "Glasses"
@@ -181,9 +187,9 @@ ingredient = ExtResource("7_eb3wa")
 [node name="CornetBase" parent="IngredientList/BaseCards" unique_id=1688859407 instance=ExtResource("10_r0apq")]
 layout_mode = 0
 offset_left = 22.0
-offset_top = 74.0
+offset_top = 72.0
 offset_right = 62.0
-offset_bottom = 114.0
+offset_bottom = 113.431015
 scale = Vector2(1.0469915, 1.3976116)
 tooltip_text = "Cornets"
 ingredient = ExtResource("5_bn1ek")
@@ -193,25 +199,30 @@ layout_mode = 0
 offset_left = 48.000004
 offset_top = 130.0
 offset_right = 88.0
-offset_bottom = 170.0
+offset_bottom = 175.98726
 scale = Vector2(1.1653568, 0.7828255)
 tooltip_text = "Waffles"
 ingredient = ExtResource("15_wn4yt")
 
 [node name="MoneyLabel" type="Label" parent="." unique_id=1536379922]
 modulate = Color(0.5764706, 0.2627451, 0.003921569, 1)
-z_index = 1
 layout_mode = 0
 offset_left = 406.0
 offset_top = 95.0
 offset_right = 446.0
 offset_bottom = 108.0
+text = "0"
 horizontal_alignment = 2
 vertical_alignment = 1
 
 [node name="ToggleOrdersButton" type="Button" parent="." unique_id=389624870]
 layout_mode = 0
-offset_left = 447.0
-offset_top = 97.0
-offset_right = 455.0
-offset_bottom = 105.0
+offset_left = 422.0
+offset_top = 62.0
+offset_right = 439.0
+offset_bottom = 86.0
+flat = true
+
+[node name="SpiderSprite" type="Sprite2D" parent="ToggleOrdersButton" unique_id=749538224]
+position = Vector2(8, -72)
+texture = SubResource("AtlasTexture_32s7f")
