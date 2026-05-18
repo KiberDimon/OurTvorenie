@@ -19,7 +19,7 @@ func update_display():
 		icon.texture = dessert_result.texture
 	if dessert_result and name_label:
 		name_label.text = dessert_result.display_name
-	print(dessert_result)
+	#print(dessert_result)
 
 # Настройка, если создаём динамически и не используем сеттер
 func setup(result: DessertResult):
@@ -34,7 +34,7 @@ func _get_drag_data(at_position: Vector2) -> Variant:
 	var preview = TextureRect.new()
 	preview.texture = dessert_result.texture
 	preview.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-	preview.custom_minimum_size = Vector2(80, 80)
+	preview.custom_minimum_size = Vector2(40, 40)
 	set_drag_preview(preview)
 	
 	# Возвращаем словарь с самим объектом DessertItem, 
