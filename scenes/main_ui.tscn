@@ -50,9 +50,6 @@ anchors_preset = 0
 script = ExtResource("10_82kx8")
 guest_pool = NodePath("GuestPool")
 slot_container = NodePath("SlotContainer")
-max_slots = null
-appear_duration = null
-disappear_duration = null
 
 [node name="GuestPool" type="Node" parent="QueueManager" unique_id=38253915]
 script = ExtResource("11_jnl7h")
@@ -90,13 +87,14 @@ offset_bottom = 40.0
 custom_minimum_size = Vector2(40, 30)
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 8.724999
-anchor_top = 1.9500002
-anchor_right = 9.724999
+anchor_left = 8.750001
+anchor_top = 1.95
+anchor_right = 9.750001
 anchor_bottom = 2.7000003
 offset_right = 0.0
 offset_bottom = 0.0
-scale = Vector2(1.09747, 1.8049072)
+scale = Vector2(1.0840082, 1.8049072)
+tooltip_text = "Eyes"
 ingredient = ExtResource("2_j6a7c")
 metadata/_edit_use_anchors_ = true
 
@@ -107,6 +105,7 @@ offset_top = 83.0
 offset_right = 336.0
 offset_bottom = 123.0
 scale = Vector2(1.1739043, 1.1663173)
+tooltip_text = "Worms"
 ingredient = ExtResource("7_4yyl0")
 
 [node name="FlyTopping" parent="IngredientList/ToppingCards" unique_id=637584190 instance=ExtResource("10_r0apq")]
@@ -116,6 +115,7 @@ offset_top = 137.0
 offset_right = 378.0
 offset_bottom = 177.0
 scale = Vector2(2.3991923, 0.60269725)
+tooltip_text = "Flies"
 ingredient = ExtResource("8_wn4yt")
 
 [node name="CreamCards" type="Control" parent="IngredientList" unique_id=1625447925]
@@ -130,6 +130,7 @@ offset_top = 109.0
 offset_right = 183.0
 offset_bottom = 149.0
 scale = Vector2(0.85096693, 0.88142914)
+tooltip_text = "Mud"
 ingredient = ExtResource("3_scoti")
 
 [node name="BloodCream" parent="IngredientList/CreamCards" unique_id=1672085639 instance=ExtResource("10_r0apq")]
@@ -139,6 +140,7 @@ offset_top = 130.0
 offset_right = 152.0
 offset_bottom = 170.0
 scale = Vector2(0.8446563, 0.87727886)
+tooltip_text = "Blood"
 ingredient = ExtResource("10_32s7f")
 
 [node name="MoldCream" parent="IngredientList/CreamCards" unique_id=1072872274 instance=ExtResource("10_r0apq")]
@@ -148,6 +150,7 @@ offset_top = 164.0
 offset_right = 129.0
 offset_bottom = 204.0
 scale = Vector2(0.81265706, 0.893126)
+tooltip_text = "Mold"
 ingredient = ExtResource("11_26nsp")
 
 [node name="BaseCards" type="Control" parent="IngredientList" unique_id=1027731840]
@@ -162,6 +165,7 @@ offset_top = 169.0
 offset_right = 56.0
 offset_bottom = 209.0
 scale = Vector2(1.6019263, 1.1915456)
+tooltip_text = "Muffins"
 ingredient = ExtResource("4_i1gbh")
 
 [node name="CocktailBase" parent="IngredientList/BaseCards" unique_id=398732684 instance=ExtResource("10_r0apq")]
@@ -171,6 +175,7 @@ offset_top = 68.00001
 offset_right = 113.0
 offset_bottom = 108.00001
 scale = Vector2(1.1226054, 1.4538015)
+tooltip_text = "Glasses"
 ingredient = ExtResource("7_eb3wa")
 
 [node name="CornetBase" parent="IngredientList/BaseCards" unique_id=1688859407 instance=ExtResource("10_r0apq")]
@@ -180,6 +185,7 @@ offset_top = 74.0
 offset_right = 62.0
 offset_bottom = 114.0
 scale = Vector2(1.0469915, 1.3976116)
+tooltip_text = "Cornets"
 ingredient = ExtResource("5_bn1ek")
 
 [node name="WaffleBase" parent="IngredientList/BaseCards" unique_id=1163954026 instance=ExtResource("10_r0apq")]
@@ -189,6 +195,7 @@ offset_top = 130.0
 offset_right = 88.0
 offset_bottom = 170.0
 scale = Vector2(1.1653568, 0.7828255)
+tooltip_text = "Waffles"
 ingredient = ExtResource("15_wn4yt")
 
 [node name="MoneyLabel" type="Label" parent="." unique_id=1536379922]

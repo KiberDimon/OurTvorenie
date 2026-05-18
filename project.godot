@@ -30,6 +30,7 @@ mouse_cursor/custom_image="uid://c3dnjcpaas0p3"
 
 [gui]
 
+timers/tooltip_delay_sec=0.1
 theme/default_font_antialiasing=0
 theme/custom_font="uid://ck1fk0264axwf"
 
