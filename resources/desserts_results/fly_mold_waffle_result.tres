@@ -1,9 +1,13 @@
 [gd_resource type="Resource" script_class="DessertResult" format=3 uid="uid://8ak51yl001gf"]
 
 [ext_resource type="Script" uid="uid://cvakjvu5ghmls" path="res://scripts/dessert_result.gd" id="1_kq0cr"]
-[ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="2_47ttp"]
+[ext_resource type="Texture2D" uid="uid://c01npy2umr8w6" path="res://assets/Мд все предметы.png" id="2_kq0cr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_47ttp"]
+atlas = ExtResource("2_kq0cr")
+region = Rect2(1426, 0, 70, 41)
 
 [resource]
 script = ExtResource("1_kq0cr")
 display_name = "Fly Moldy Waffle"
-texture = ExtResource("2_47ttp")
+texture = SubResource("AtlasTexture_47ttp")

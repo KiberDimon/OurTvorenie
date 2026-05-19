@@ -1,9 +1,13 @@
 [gd_resource type="Resource" script_class="DessertResult" format=3 uid="uid://bl0pn8inxee2"]
 
 [ext_resource type="Script" uid="uid://cvakjvu5ghmls" path="res://scripts/dessert_result.gd" id="1_lpvov"]
-[ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="2_awvgs"]
+[ext_resource type="Texture2D" uid="uid://c01npy2umr8w6" path="res://assets/Мд все предметы.png" id="2_lpvov"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_awvgs"]
+atlas = ExtResource("2_lpvov")
+region = Rect2(598, 0, 34, 39)
 
 [resource]
 script = ExtResource("1_lpvov")
 display_name = "Worm Muddy Muffin"
-texture = ExtResource("2_awvgs")
+texture = SubResource("AtlasTexture_awvgs")

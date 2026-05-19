@@ -1,9 +1,13 @@
 [gd_resource type="Resource" script_class="DessertResult" format=3 uid="uid://bs4jq13aishvb"]
 
 [ext_resource type="Script" uid="uid://cvakjvu5ghmls" path="res://scripts/dessert_result.gd" id="1_whfbj"]
-[ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="2_vjgk7"]
+[ext_resource type="Texture2D" uid="uid://c01npy2umr8w6" path="res://assets/Мд все предметы.png" id="2_whfbj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vjgk7"]
+atlas = ExtResource("2_whfbj")
+region = Rect2(213, 0, 36, 63)
 
 [resource]
 script = ExtResource("1_whfbj")
 display_name = "Worm Moldy Cornet"
-texture = ExtResource("2_vjgk7")
+texture = SubResource("AtlasTexture_vjgk7")

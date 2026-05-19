@@ -226,7 +226,6 @@ atlas = ExtResource("52_o7ddy")
 region = Rect2(75, 0, 45, 53)
 
 [node name="Main" type="Node2D" unique_id=1865117869]
-scale = Vector2(0.8958379, 0.99997586)
 script = ExtResource("1_0wfyh")
 
 [node name="MainUI" parent="." unique_id=1500070565 instance=ExtResource("51_bjg73")]
@@ -234,7 +233,6 @@ script = ExtResource("1_0wfyh")
 [node name="Table" type="AnimatedSprite2D" parent="." unique_id=1515120844]
 z_index = -1
 position = Vector2(240, 135)
-scale = Vector2(0.99999994, 0.99999994)
 sprite_frames = SubResource("SpriteFrames_vrx01")
 animation = &"cold"
 frame = 12
@@ -250,7 +248,8 @@ offset_bottom = 40.0
 [node name="BlurFilter" type="ColorRect" parent="Menu" unique_id=926303386]
 material = SubResource("ShaderMaterial_ids8r")
 layout_mode = 0
-offset_right = 43.0
+offset_left = -56.929943
+offset_right = -6.259945
 offset_bottom = 39.0
 scale = Vector2(11.162437, 6.923236)
 

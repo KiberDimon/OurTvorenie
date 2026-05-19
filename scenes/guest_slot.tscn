@@ -48,12 +48,11 @@ texture = SubResource("AtlasTexture_0qvxq")
 
 [node name="OrderIcon" type="TextureRect" parent="OrderCard" unique_id=1734960923]
 layout_mode = 0
-offset_left = -20.0
-offset_top = -14.0
-offset_right = 20.0
-offset_bottom = 26.0
-scale = Vector2(1.4991399, 1.3378856)
-expand_mode = 1
+offset_left = -24.0
+offset_top = -18.0
+offset_right = 42.0
+offset_bottom = 45.0
+stretch_mode = 3
 
 [node name="OrderLabel" type="Label" parent="OrderCard" unique_id=428579326]
 visible = false

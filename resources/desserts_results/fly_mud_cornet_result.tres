@@ -1,9 +1,13 @@
 [gd_resource type="Resource" script_class="DessertResult" format=3 uid="uid://dqoqutyy7q6qp"]
 
 [ext_resource type="Script" uid="uid://cvakjvu5ghmls" path="res://scripts/dessert_result.gd" id="1_kiu8o"]
-[ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="2_smmbb"]
+[ext_resource type="Texture2D" uid="uid://c01npy2umr8w6" path="res://assets/Мд все предметы.png" id="2_kiu8o"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_smmbb"]
+atlas = ExtResource("2_kiu8o")
+region = Rect2(66, 0, 25, 63)
 
 [resource]
 script = ExtResource("1_kiu8o")
 display_name = "Fly Muddy Cornet"
-texture = ExtResource("2_smmbb")
+texture = SubResource("AtlasTexture_smmbb")

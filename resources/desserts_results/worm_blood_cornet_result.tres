@@ -1,9 +1,13 @@
 [gd_resource type="Resource" script_class="DessertResult" format=3 uid="uid://cpj4v5n0l3p4n"]
 
 [ext_resource type="Script" uid="uid://cvakjvu5ghmls" path="res://scripts/dessert_result.gd" id="1_jt6sx"]
-[ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="2_xjy1t"]
+[ext_resource type="Texture2D" uid="uid://c01npy2umr8w6" path="res://assets/Мд все предметы.png" id="2_jt6sx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xjy1t"]
+atlas = ExtResource("2_jt6sx")
+region = Rect2(121, 0, 36, 63)
 
 [resource]
 script = ExtResource("1_jt6sx")
 display_name = "Worm Blood Cornet"
-texture = ExtResource("2_xjy1t")
+texture = SubResource("AtlasTexture_xjy1t")

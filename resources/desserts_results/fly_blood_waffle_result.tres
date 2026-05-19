@@ -1,9 +1,13 @@
 [gd_resource type="Resource" script_class="DessertResult" format=3 uid="uid://8f5ggoduwxed"]
 
 [ext_resource type="Script" uid="uid://cvakjvu5ghmls" path="res://scripts/dessert_result.gd" id="1_7vsk3"]
-[ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="2_hs0ox"]
+[ext_resource type="Texture2D" uid="uid://c01npy2umr8w6" path="res://assets/Мд все предметы.png" id="2_7vsk3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hs0ox"]
+atlas = ExtResource("2_7vsk3")
+region = Rect2(1219, 0, 66, 41)
 
 [resource]
 script = ExtResource("1_7vsk3")
 display_name = "Fly Blood Waffle"
-texture = ExtResource("2_hs0ox")
+texture = SubResource("AtlasTexture_hs0ox")

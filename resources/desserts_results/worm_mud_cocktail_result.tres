@@ -1,9 +1,13 @@
 [gd_resource type="Resource" script_class="DessertResult" format=3 uid="uid://cuxvbtkgq61k2"]
 
 [ext_resource type="Script" uid="uid://cvakjvu5ghmls" path="res://scripts/dessert_result.gd" id="1_nb7m7"]
-[ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="2_hx73c"]
+[ext_resource type="Texture2D" uid="uid://c01npy2umr8w6" path="res://assets/Мд все предметы.png" id="2_nb7m7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hx73c"]
+atlas = ExtResource("2_nb7m7")
+region = Rect2(306, 0, 33, 56)
 
 [resource]
 script = ExtResource("1_nb7m7")
 display_name = "Worm Muddy Cocktail"
-texture = ExtResource("2_hx73c")
+texture = SubResource("AtlasTexture_hx73c")

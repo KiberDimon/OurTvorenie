@@ -1,9 +1,13 @@
 [gd_resource type="Resource" script_class="DessertResult" format=3 uid="uid://c1on8ihtor1wn"]
 
 [ext_resource type="Script" uid="uid://cvakjvu5ghmls" path="res://scripts/dessert_result.gd" id="1_dfoae"]
-[ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="2_4e8py"]
+[ext_resource type="Texture2D" uid="uid://c01npy2umr8w6" path="res://assets/Мд все предметы.png" id="2_dfoae"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4e8py"]
+atlas = ExtResource("2_dfoae")
+region = Rect2(1085, 0, 66, 41)
 
 [resource]
 script = ExtResource("1_dfoae")
 display_name = "Eyeball Blood Waffle"
-texture = ExtResource("2_4e8py")
+texture = SubResource("AtlasTexture_4e8py")

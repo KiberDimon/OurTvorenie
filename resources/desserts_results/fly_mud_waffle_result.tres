@@ -1,9 +1,13 @@
 [gd_resource type="Resource" script_class="DessertResult" format=3 uid="uid://iol6b784yvke"]
 
 [ext_resource type="Script" uid="uid://cvakjvu5ghmls" path="res://scripts/dessert_result.gd" id="1_kn54h"]
-[ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="2_tuspl"]
+[ext_resource type="Texture2D" uid="uid://c01npy2umr8w6" path="res://assets/Мд все предметы.png" id="2_kn54h"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tuspl"]
+atlas = ExtResource("2_kn54h")
+region = Rect2(1017, 0, 67, 41)
 
 [resource]
 script = ExtResource("1_kn54h")
 display_name = "Fly Muddy Waffle"
-texture = ExtResource("2_tuspl")
+texture = SubResource("AtlasTexture_tuspl")

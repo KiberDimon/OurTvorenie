@@ -1,9 +1,13 @@
 [gd_resource type="Resource" script_class="DessertResult" format=3 uid="uid://cjgf4jt6m44b8"]
 
 [ext_resource type="Script" uid="uid://cvakjvu5ghmls" path="res://scripts/dessert_result.gd" id="1_w7ocl"]
-[ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="2_1wgmk"]
+[ext_resource type="Texture2D" uid="uid://c01npy2umr8w6" path="res://assets/Мд все предметы.png" id="2_w7ocl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1wgmk"]
+atlas = ExtResource("2_w7ocl")
+region = Rect2(372, 0, 29, 56)
 
 [resource]
 script = ExtResource("1_w7ocl")
 display_name = "Eyeball Blood Cocktail"
-texture = ExtResource("2_1wgmk")
+texture = SubResource("AtlasTexture_1wgmk")

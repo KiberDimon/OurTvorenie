@@ -1,9 +1,13 @@
 [gd_resource type="Resource" script_class="DessertResult" format=3 uid="uid://7rx68tj526fx"]
 
 [ext_resource type="Script" uid="uid://cvakjvu5ghmls" path="res://scripts/dessert_result.gd" id="1_7hxpm"]
-[ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="2_014en"]
+[ext_resource type="Texture2D" uid="uid://c01npy2umr8w6" path="res://assets/Мд все предметы.png" id="2_7hxpm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_014en"]
+atlas = ExtResource("2_7hxpm")
+region = Rect2(669, 0, 34, 39)
 
 [resource]
 script = ExtResource("1_7hxpm")
 display_name = "Eyeball Blood Muffin"
-texture = ExtResource("2_014en")
+texture = SubResource("AtlasTexture_014en")

@@ -1,9 +1,13 @@
 [gd_resource type="Resource" script_class="DessertResult" format=3 uid="uid://cpj07t8rbtts0"]
 
 [ext_resource type="Script" uid="uid://cvakjvu5ghmls" path="res://scripts/dessert_result.gd" id="1_h7udk"]
-[ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="2_logn6"]
+[ext_resource type="Texture2D" uid="uid://c01npy2umr8w6" path="res://assets/Мд все предметы.png" id="2_h7udk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_logn6"]
+atlas = ExtResource("2_h7udk")
+region = Rect2(0, 0, 28, 63)
 
 [resource]
 script = ExtResource("1_h7udk")
 display_name = "Eyeball Muddy Cornet"
-texture = ExtResource("2_logn6")
+texture = SubResource("AtlasTexture_logn6")

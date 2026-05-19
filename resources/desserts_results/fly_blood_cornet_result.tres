@@ -1,9 +1,13 @@
 [gd_resource type="Resource" script_class="DessertResult" format=3 uid="uid://buv0gxg1yofye"]
 
 [ext_resource type="Script" uid="uid://cvakjvu5ghmls" path="res://scripts/dessert_result.gd" id="1_bujs0"]
-[ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="2_aq4oo"]
+[ext_resource type="Texture2D" uid="uid://c01npy2umr8w6" path="res://assets/Мд все предметы.png" id="2_bujs0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aq4oo"]
+atlas = ExtResource("2_bujs0")
+region = Rect2(158, 0, 25, 63)
 
 [resource]
 script = ExtResource("1_bujs0")
 display_name = "Fly Blood Cornet"
-texture = ExtResource("2_aq4oo")
+texture = SubResource("AtlasTexture_aq4oo")

@@ -1,9 +1,13 @@
 [gd_resource type="Resource" script_class="DessertResult" format=3 uid="uid://bwcwqs6ovpjbr"]
 
 [ext_resource type="Script" uid="uid://cvakjvu5ghmls" path="res://scripts/dessert_result.gd" id="1_5xhgr"]
-[ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="2_axx73"]
+[ext_resource type="Texture2D" uid="uid://c01npy2umr8w6" path="res://assets/Мд все предметы.png" id="2_5xhgr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_axx73"]
+atlas = ExtResource("2_5xhgr")
+region = Rect2(467, 0, 29, 56)
 
 [resource]
 script = ExtResource("1_5xhgr")
 display_name = "Eyeball Moldy Cocktail"
-texture = ExtResource("2_axx73")
+texture = SubResource("AtlasTexture_axx73")

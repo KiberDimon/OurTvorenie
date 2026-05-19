@@ -1,9 +1,13 @@
 [gd_resource type="Resource" script_class="DessertResult" format=3 uid="uid://d268twffmda8m"]
 
 [ext_resource type="Script" uid="uid://cvakjvu5ghmls" path="res://scripts/dessert_result.gd" id="1_4rx0t"]
-[ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="2_sjygw"]
+[ext_resource type="Texture2D" uid="uid://c01npy2umr8w6" path="res://assets/Мд все предметы.png" id="2_4rx0t"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sjygw"]
+atlas = ExtResource("2_4rx0t")
+region = Rect2(435, 0, 31, 56)
 
 [resource]
 script = ExtResource("1_4rx0t")
 display_name = "Fly Blood Cocktail"
-texture = ExtResource("2_sjygw")
+texture = SubResource("AtlasTexture_sjygw")

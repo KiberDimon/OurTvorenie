@@ -1,9 +1,13 @@
 [gd_resource type="Resource" script_class="DessertResult" format=3 uid="uid://gi0733mwpq4s"]
 
 [ext_resource type="Script" uid="uid://cvakjvu5ghmls" path="res://scripts/dessert_result.gd" id="1_25wm5"]
-[ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="2_8vsfh"]
+[ext_resource type="Texture2D" uid="uid://c01npy2umr8w6" path="res://assets/Мд все предметы.png" id="2_25wm5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8vsfh"]
+atlas = ExtResource("2_25wm5")
+region = Rect2(250, 0, 25, 63)
 
 [resource]
 script = ExtResource("1_25wm5")
 display_name = "Fly Moldy Cornet"
-texture = ExtResource("2_8vsfh")
+texture = SubResource("AtlasTexture_8vsfh")

@@ -1,9 +1,13 @@
 [gd_resource type="Resource" script_class="DessertResult" format=3 uid="uid://bam8pkd2aqjoe"]
 
 [ext_resource type="Script" uid="uid://cvakjvu5ghmls" path="res://scripts/dessert_result.gd" id="1_r03o7"]
-[ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="2_pg2ma"]
+[ext_resource type="Texture2D" uid="uid://c01npy2umr8w6" path="res://assets/Мд все предметы.png" id="2_r03o7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pg2ma"]
+atlas = ExtResource("2_r03o7")
+region = Rect2(92, 0, 28, 63)
 
 [resource]
 script = ExtResource("1_r03o7")
 display_name = "Eyeball Blood Cornet"
-texture = ExtResource("2_pg2ma")
+texture = SubResource("AtlasTexture_pg2ma")

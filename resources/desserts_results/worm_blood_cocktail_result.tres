@@ -1,9 +1,13 @@
 [gd_resource type="Resource" script_class="DessertResult" format=3 uid="uid://c0nl7uxqa18ds"]
 
 [ext_resource type="Script" uid="uid://cvakjvu5ghmls" path="res://scripts/dessert_result.gd" id="1_wg22s"]
-[ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="2_x61rr"]
+[ext_resource type="Texture2D" uid="uid://c01npy2umr8w6" path="res://assets/Мд все предметы.png" id="2_wg22s"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x61rr"]
+atlas = ExtResource("2_wg22s")
+region = Rect2(402, 0, 32, 57)
 
 [resource]
 script = ExtResource("1_wg22s")
 display_name = "Worm Blood Cocktail"
-texture = ExtResource("2_x61rr")
+texture = SubResource("AtlasTexture_x61rr")

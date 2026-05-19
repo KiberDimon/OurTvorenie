@@ -1,9 +1,13 @@
 [gd_resource type="Resource" script_class="DessertResult" format=3 uid="uid://dx13nfh0b20l3"]
 
 [ext_resource type="Script" uid="uid://cvakjvu5ghmls" path="res://scripts/dessert_result.gd" id="1_gvxfo"]
-[ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="2_b0k1o"]
+[ext_resource type="Texture2D" uid="uid://c01npy2umr8w6" path="res://assets/Мд все предметы.png" id="2_gvxfo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b0k1o"]
+atlas = ExtResource("2_gvxfo")
+region = Rect2(881, 0, 67, 41)
 
 [resource]
 script = ExtResource("1_gvxfo")
 display_name = "Eyeball Muddy Waffle"
-texture = ExtResource("2_b0k1o")
+texture = SubResource("AtlasTexture_b0k1o")

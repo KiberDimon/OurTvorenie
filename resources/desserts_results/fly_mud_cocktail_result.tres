@@ -1,9 +1,13 @@
 [gd_resource type="Resource" script_class="DessertResult" format=3 uid="uid://cl4sisrm8x3fw"]
 
 [ext_resource type="Script" uid="uid://cvakjvu5ghmls" path="res://scripts/dessert_result.gd" id="1_og4jl"]
-[ext_resource type="Texture2D" uid="uid://coxfn4vjoty7y" path="res://assets/icon.svg" id="2_mgu31"]
+[ext_resource type="Texture2D" uid="uid://c01npy2umr8w6" path="res://assets/Мд все предметы.png" id="2_og4jl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mgu31"]
+atlas = ExtResource("2_og4jl")
+region = Rect2(340, 0, 31, 56)
 
 [resource]
 script = ExtResource("1_og4jl")
 display_name = "Fly Muddy Cocktail"
-texture = ExtResource("2_mgu31")
+texture = SubResource("AtlasTexture_mgu31")
