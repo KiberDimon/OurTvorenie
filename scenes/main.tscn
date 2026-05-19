@@ -52,7 +52,7 @@
 [ext_resource type="Script" uid="uid://cfvc8p0oldf3t" path="res://scripts/table.gd" id="50_akjxb"]
 [ext_resource type="PackedScene" uid="uid://bsy6hckwvqxh0" path="res://scenes/main_ui.tscn" id="51_bjg73"]
 [ext_resource type="Texture2D" uid="uid://bmrcvs714oek5" path="res://assets/Ингридиенты и курсор.png" id="52_o7ddy"]
-[ext_resource type="Script" path="res://scripts/cursor.gd" id="53_0loja"]
+[ext_resource type="Script" uid="uid://ho7sstha6qpt" path="res://scripts/cursor.gd" id="53_0loja"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vrx01"]
 animations = [{
@@ -262,6 +262,7 @@ script = ExtResource("50_akjxb")
 [node name="Cursor" type="TextureRect" parent="." unique_id=752139742]
 offset_right = 40.0
 offset_bottom = 40.0
+mouse_filter = 2
 texture = SubResource("AtlasTexture_ids8r")
 script = ExtResource("53_0loja")
 

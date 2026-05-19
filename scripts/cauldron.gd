@@ -25,6 +25,7 @@ func _drop_data(at_position: Vector2, data: Variant) -> void:
 	
 	# Если все три категории на месте — готовим
 	if _current.size() == 3:
+		
 		var base_id = _current[Ingredient.Category.BASE].id
 		var cream_id = _current[Ingredient.Category.CREAM].id
 		var topping_id = _current[Ingredient.Category.TOPPING].id

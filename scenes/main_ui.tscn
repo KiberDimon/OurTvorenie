@@ -39,6 +39,7 @@ grow_vertical = 2
 script = ExtResource("1_r8eje")
 
 [node name="tabl" type="Sprite2D" parent="." unique_id=639964491]
+visible = false
 position = Vector2(241, 135)
 texture = ExtResource("2_rbpqj")
 
@@ -221,6 +222,7 @@ offset_left = 422.0
 offset_top = 62.0
 offset_right = 439.0
 offset_bottom = 86.0
+tooltip_text = "recipes"
 flat = true
 
 [node name="SpiderSprite" type="Sprite2D" parent="ToggleOrdersButton" unique_id=749538224]
