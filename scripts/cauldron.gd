@@ -33,6 +33,7 @@ func _drop_data(at_position: Vector2, data: Variant) -> void:
 	
 		var result = RecipeManager.get_result(base_id, cream_id, topping_id)
 		print("Результат: ", result)
+		$"../Puf".play("puf")
 		dessert_ready.emit(result)
 		_current.clear()
 		cleared.emit()

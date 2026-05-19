@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dbtiih3qvmdr2"]
 
 [ext_resource type="Script" uid="uid://d0pbo6ynaj6gl" path="res://scripts/main.gd" id="1_0wfyh"]
+[ext_resource type="Texture2D" uid="uid://25ljcqrlynat" path="res://assets/Бэк1.png" id="2_ids8r"]
 [ext_resource type="Texture2D" uid="uid://cp2quhe2nn2aj" path="res://assets/3 Ледяной котел/Мд анимация стола3.png" id="2_j2jfr"]
 [ext_resource type="Texture2D" uid="uid://dq22ooe7w1rw1" path="res://assets/3 Ледяной котел/Мд анимация стола4.png" id="3_bjg73"]
 [ext_resource type="Texture2D" uid="uid://ctmmi4qhxjjah" path="res://assets/3 Ледяной котел/Мд анимация стола5.png" id="4_bu4jf"]
@@ -227,6 +228,11 @@ region = Rect2(75, 0, 45, 53)
 
 [node name="Main" type="Node2D" unique_id=1865117869]
 script = ExtResource("1_0wfyh")
+
+[node name="background" type="Sprite2D" parent="." unique_id=1429966870]
+z_index = -2
+position = Vector2(240, 135)
+texture = ExtResource("2_ids8r")
 
 [node name="MainUI" parent="." unique_id=1500070565 instance=ExtResource("51_bjg73")]
 

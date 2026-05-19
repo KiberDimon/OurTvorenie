@@ -13,8 +13,8 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = -352.0
-offset_bottom = -142.0
+offset_right = -337.0
+offset_bottom = -127.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
@@ -32,6 +32,7 @@ offset_bottom = 23.0
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
+stretch_mode = 3
 
 [node name="OrderCard" type="Control" parent="." unique_id=1395000088]
 anchors_preset = 0
@@ -40,18 +41,16 @@ offset_bottom = 40.0
 
 [node name="OrderCard" type="TextureRect" parent="OrderCard" unique_id=1123157756]
 layout_mode = 0
-offset_left = -36.0
-offset_top = -139.0
-offset_right = 55.0
-offset_bottom = 66.0
+offset_top = -120.0
+offset_right = 91.0
+offset_bottom = 85.0
 texture = SubResource("AtlasTexture_0qvxq")
 
 [node name="OrderIcon" type="TextureRect" parent="OrderCard" unique_id=1734960923]
 layout_mode = 0
-offset_left = -24.0
-offset_top = -18.0
-offset_right = 42.0
-offset_bottom = 45.0
+offset_left = 13.0
+offset_right = 78.0
+offset_bottom = 63.0
 stretch_mode = 3
 
 [node name="OrderLabel" type="Label" parent="OrderCard" unique_id=428579326]

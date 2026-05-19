@@ -6,10 +6,16 @@
 [ext_resource type="Texture2D" uid="uid://dogm30in0gaq5" path="res://assets/2 Средний котел/Мд анимация стола3.png" id="2_rbpqj"]
 [ext_resource type="Resource" uid="uid://ouenind7kr8c" path="res://resources/ingredients/cream/mud_cream.tres" id="3_scoti"]
 [ext_resource type="Resource" uid="uid://bq28vpp5ert15" path="res://resources/ingredients/base/muffin_base.tres" id="4_i1gbh"]
+[ext_resource type="Texture2D" uid="uid://crdpyyuno7qm4" path="res://assets/Пуф готовый десерт/Пуф готовый десерт1.png" id="4_kvlnv"]
 [ext_resource type="Resource" uid="uid://d2nfvcckhbp1v" path="res://resources/ingredients/base/cornet_base.tres" id="5_bn1ek"]
+[ext_resource type="Texture2D" uid="uid://b76kgayhl52ti" path="res://assets/Пуф готовый десерт/Пуф готовый десерт2.png" id="5_o3ev5"]
+[ext_resource type="Texture2D" uid="uid://fr48ngh6qinv" path="res://assets/Пуф готовый десерт/Пуф готовый десерт3.png" id="6_whs7n"]
 [ext_resource type="Resource" uid="uid://cmqodu2axiigi" path="res://resources/ingredients/topping/worm_topping.tres" id="7_4yyl0"]
 [ext_resource type="Resource" uid="uid://bxfc4kigpgbhc" path="res://resources/ingredients/base/cocktail_base.tres" id="7_eb3wa"]
+[ext_resource type="Texture2D" uid="uid://q51ll3ni8y82" path="res://assets/Пуф готовый десерт/Пуф готовый десерт4.png" id="7_j75ip"]
+[ext_resource type="Texture2D" uid="uid://0a0w6xgun6a1" path="res://assets/Пуф готовый десерт/Пуф готовый десерт5.png" id="8_hcjlu"]
 [ext_resource type="Resource" uid="uid://c6egtfrev1eo0" path="res://resources/ingredients/topping/fly_topping.tres" id="8_wn4yt"]
+[ext_resource type="Texture2D" uid="uid://cg7obqpv6kssa" path="res://assets/Пуф готовый десерт/Пуф готовый десерт6.png" id="9_acyf0"]
 [ext_resource type="Resource" uid="uid://c1csr75axlrrq" path="res://resources/ingredients/cream/blood_cream.tres" id="10_32s7f"]
 [ext_resource type="Script" uid="uid://bc0q8vyjg4nnf" path="res://scripts/queue_manager.gd" id="10_82kx8"]
 [ext_resource type="PackedScene" uid="uid://b63ia4ah2tngg" path="res://scenes/ingredient_card.tscn" id="10_r0apq"]
@@ -30,6 +36,38 @@
 atlas = ExtResource("24_wn4yt")
 region = Rect2(92, 0, 17, 202)
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_kvlnv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_kvlnv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_o3ev5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_whs7n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_j75ip")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_hcjlu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_acyf0")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"puf",
+"speed": 12.0
+}]
+
 [node name="MainUI" type="Control" unique_id=1500070565]
 layout_mode = 3
 anchors_preset = 15
@@ -46,11 +84,11 @@ texture = ExtResource("2_rbpqj")
 
 [node name="Cauldron" type="Control" parent="." unique_id=1331123795]
 anchors_preset = 0
-offset_left = 169.0
+offset_left = 165.0
 offset_top = 182.0
-offset_right = 209.0
+offset_right = 205.0
 offset_bottom = 222.0
-scale = Vector2(3.4935293, 1.8950994)
+scale = Vector2(3.80277, 1.9030629)
 script = ExtResource("2_i1gbh")
 
 [node name="QueueManager" type="Control" parent="." unique_id=909148876 node_paths=PackedStringArray("guest_pool", "slot_container")]
@@ -69,7 +107,8 @@ offset_left = 40.0
 offset_top = 16.0
 offset_right = 40.0
 offset_bottom = 16.0
-theme_override_constants/separation = 143
+theme_override_constants/separation = 147
+alignment = 2
 
 [node name="Tray" type="Control" parent="." unique_id=1960852670]
 anchors_preset = 0
@@ -230,3 +269,8 @@ script = ExtResource("24_32s7f")
 [node name="SpiderSprite" type="Sprite2D" parent="ToggleOrdersButton" unique_id=749538224]
 position = Vector2(8, -72)
 texture = SubResource("AtlasTexture_32s7f")
+
+[node name="Puf" type="AnimatedSprite2D" parent="." unique_id=1129171925]
+position = Vector2(240, 135)
+sprite_frames = SubResource("SpriteFrames_kvlnv")
+animation = &"puf"
