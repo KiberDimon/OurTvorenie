@@ -5,5 +5,5 @@
 
 [resource]
 script = ExtResource("1_r03o7")
-display_name = "Eye_blood_cornet"
+display_name = "Eyeball Blood Cornet"
 texture = ExtResource("2_pg2ma")

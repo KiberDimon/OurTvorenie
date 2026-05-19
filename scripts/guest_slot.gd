@@ -42,6 +42,7 @@ func setup(guest: GuestData, dessert: DessertResult):
 	order_icon.texture = dessert.texture
 	order_label.text = dessert.display_name
 	guest_name.text = guest.display_name
+	order_icon.tooltip_text = dessert.display_name
 
 func appear(duration: float = 0.5):
 	var tween = create_tween()

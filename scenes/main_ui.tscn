@@ -23,7 +23,7 @@
 [ext_resource type="Resource" uid="uid://b7lsv3jtrhxgs" path="res://resources/ingredients/base/waffle_base.tres" id="15_wn4yt"]
 [ext_resource type="Resource" uid="uid://108cqji8i2p0" path="res://resources/guests/zombie.tres" id="16_tshsl"]
 [ext_resource type="Resource" uid="uid://0bvn2q0byoxn" path="res://resources/guests/shkelet.tres" id="17_1t7kk"]
-[ext_resource type="Script" uid="uid://csay8mywun2fx" path="res://scripts/toggle_orders_button.gd" id="24_32s7f"]
+[ext_resource type="Script" path="res://scripts/toggle_orders_button.gd" id="24_32s7f"]
 [ext_resource type="Texture2D" uid="uid://dnsbw8hdg83ow" path="res://assets/Карточки и паук.png" id="24_wn4yt"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_32s7f"]
@@ -183,7 +183,7 @@ offset_top = 68.00001
 offset_right = 114.53925
 offset_bottom = 108.00001
 scale = Vector2(1.1226054, 1.4538015)
-tooltip_text = "Glasses"
+tooltip_text = "Cocktails"
 ingredient = ExtResource("7_eb3wa")
 
 [node name="CornetBase" parent="IngredientList/BaseCards" unique_id=1688859407 instance=ExtResource("10_r0apq")]

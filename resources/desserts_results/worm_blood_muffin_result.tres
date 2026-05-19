@@ -5,5 +5,5 @@
 
 [resource]
 script = ExtResource("1_bqt4s")
-display_name = "Worm_blood_muffin"
+display_name = "Worm Blood Muffin"
 texture = ExtResource("2_xb020")
