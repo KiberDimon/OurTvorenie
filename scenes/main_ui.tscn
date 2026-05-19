@@ -23,6 +23,7 @@
 [ext_resource type="Resource" uid="uid://b7lsv3jtrhxgs" path="res://resources/ingredients/base/waffle_base.tres" id="15_wn4yt"]
 [ext_resource type="Resource" uid="uid://108cqji8i2p0" path="res://resources/guests/zombie.tres" id="16_tshsl"]
 [ext_resource type="Resource" uid="uid://0bvn2q0byoxn" path="res://resources/guests/shkelet.tres" id="17_1t7kk"]
+[ext_resource type="Script" uid="uid://csay8mywun2fx" path="res://scripts/toggle_orders_button.gd" id="24_32s7f"]
 [ext_resource type="Texture2D" uid="uid://dnsbw8hdg83ow" path="res://assets/Карточки и паук.png" id="24_wn4yt"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_32s7f"]
@@ -39,7 +40,6 @@ grow_vertical = 2
 script = ExtResource("1_r8eje")
 
 [node name="tabl" type="Sprite2D" parent="." unique_id=639964491]
-visible = false
 position = Vector2(241, 135)
 texture = ExtResource("2_rbpqj")
 
@@ -219,11 +219,12 @@ vertical_alignment = 1
 [node name="ToggleOrdersButton" type="Button" parent="." unique_id=389624870]
 layout_mode = 0
 offset_left = 422.0
-offset_top = 62.0
+offset_top = 11.0
 offset_right = 439.0
-offset_bottom = 86.0
-tooltip_text = "recipes"
+offset_bottom = 35.0
+toggle_mode = true
 flat = true
+script = ExtResource("24_32s7f")
 
 [node name="SpiderSprite" type="Sprite2D" parent="ToggleOrdersButton" unique_id=749538224]
 position = Vector2(8, -72)

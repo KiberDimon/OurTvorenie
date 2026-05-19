@@ -82,6 +82,8 @@ func _get_container_for(category: Ingredient.Category) -> Control:
 func _on_toggle_orders():
 	_orders_visible = not _orders_visible
 	if _orders_visible:
+		toggle_orders_button.spider_up()
 		queue_manager.show_all_orders()
 	else:
+		toggle_orders_button.spider_down()
 		queue_manager.hide_all_orders()
