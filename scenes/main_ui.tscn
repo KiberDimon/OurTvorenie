@@ -24,13 +24,13 @@
 [ext_resource type="Script" uid="uid://0mb50pa65of5" path="res://scripts/tray.gd" id="12_4yyl0"]
 [ext_resource type="Script" uid="uid://xnyy3k1u1ref" path="res://scripts/guest_data.gd" id="12_rx44x"]
 [ext_resource type="Resource" uid="uid://csm6ok0fww6ea" path="res://resources/guests/rider.tres" id="13_j03cv"]
-[ext_resource type="Script" uid="uid://csu5k8e36i3vi" path="res://scripts/ingredient_list.gd" id="13_o3ev5"]
+[ext_resource type="Script" path="res://scripts/ingredient_list.gd" id="13_o3ev5"]
 [ext_resource type="Resource" uid="uid://6lcj56u7ajar" path="res://resources/guests/arahno.tres" id="14_rbpqj"]
 [ext_resource type="Resource" uid="uid://d0x4iarce7skw" path="res://resources/guests/lurker.tres" id="15_eigca"]
 [ext_resource type="Resource" uid="uid://b7lsv3jtrhxgs" path="res://resources/ingredients/base/waffle_base.tres" id="15_wn4yt"]
 [ext_resource type="Resource" uid="uid://108cqji8i2p0" path="res://resources/guests/zombie.tres" id="16_tshsl"]
 [ext_resource type="Resource" uid="uid://0bvn2q0byoxn" path="res://resources/guests/shkelet.tres" id="17_1t7kk"]
-[ext_resource type="Script" uid="uid://csay8mywun2fx" path="res://scripts/toggle_orders_button.gd" id="24_32s7f"]
+[ext_resource type="Script" path="res://scripts/toggle_orders_button.gd" id="24_32s7f"]
 [ext_resource type="Texture2D" uid="uid://dnsbw8hdg83ow" path="res://assets/Карточки и паук.png" id="24_wn4yt"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_32s7f"]
@@ -260,9 +260,9 @@ vertical_alignment = 1
 
 [node name="ToggleOrdersButton" type="Button" parent="." unique_id=389624870]
 layout_mode = 0
-offset_left = 422.0
+offset_left = 450.0
 offset_top = 11.0
-offset_right = 439.0
+offset_right = 467.0
 offset_bottom = 35.0
 toggle_mode = true
 flat = true
