@@ -51,6 +51,7 @@
 [ext_resource type="Texture2D" uid="uid://d4knm1gp51vuq" path="res://assets/2 Средний котел/Мд анимация стола17.png" id="49_673bd"]
 [ext_resource type="Script" uid="uid://cfvc8p0oldf3t" path="res://scripts/table.gd" id="50_akjxb"]
 [ext_resource type="PackedScene" uid="uid://bsy6hckwvqxh0" path="res://scenes/main_ui.tscn" id="51_bjg73"]
+[ext_resource type="Shader" uid="uid://suq5s0um5jo4" path="res://shaders/blur.gdshader" id="52_0loja"]
 [ext_resource type="Texture2D" uid="uid://bmrcvs714oek5" path="res://assets/Ингридиенты и курсор.png" id="52_o7ddy"]
 [ext_resource type="Script" uid="uid://ho7sstha6qpt" path="res://scripts/cursor.gd" id="53_0loja"]
 
@@ -216,6 +217,10 @@ animations = [{
 "speed": 12.0
 }]
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ids8r"]
+shader = ExtResource("52_0loja")
+shader_parameter/blur_amount = 4.00000019
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_ids8r"]
 atlas = ExtResource("52_o7ddy")
 region = Rect2(75, 0, 45, 53)
@@ -241,6 +246,13 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+
+[node name="BlurFilter" type="ColorRect" parent="Menu" unique_id=926303386]
+material = SubResource("ShaderMaterial_ids8r")
+layout_mode = 0
+offset_right = 43.0
+offset_bottom = 39.0
+scale = Vector2(11.162437, 6.923236)
 
 [node name="Start" type="Button" parent="Menu" unique_id=1995638516]
 layout_mode = 0
