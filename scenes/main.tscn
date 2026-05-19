@@ -54,7 +54,7 @@
 [ext_resource type="PackedScene" uid="uid://bsy6hckwvqxh0" path="res://scenes/main_ui.tscn" id="51_bjg73"]
 [ext_resource type="Shader" uid="uid://suq5s0um5jo4" path="res://shaders/blur.gdshader" id="52_0loja"]
 [ext_resource type="Texture2D" uid="uid://bmrcvs714oek5" path="res://assets/Ингридиенты и курсор.png" id="52_o7ddy"]
-[ext_resource type="Script" uid="uid://ho7sstha6qpt" path="res://scripts/cursor.gd" id="53_0loja"]
+[ext_resource type="Script" path="res://scripts/cursor.gd" id="53_0loja"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vrx01"]
 animations = [{

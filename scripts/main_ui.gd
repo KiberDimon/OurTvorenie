@@ -62,6 +62,7 @@ func _on_guest_served(correct: bool, payment: int):
 		money_label.text = " %d" % money
 		#ЛЕХА ТУТ ЗВУК КАССЫ===================================================
 		AudioManager.play_sfx(preload("res://audio/audio_assets/cash.mp3"), +3.0)
+		AudioManager.play_sfx(preload("res://audio/audio_assets/sfx/cash.mp3"), +3.0)
 		# Эффект: деньги летят в кассу
 	else:
 		# Эффект: гость уходит недовольный

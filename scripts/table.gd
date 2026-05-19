@@ -1,9 +1,9 @@
 extends AnimatedSprite2D
 
 # Загружаем звуки заранее
-const SFX_COLD   = preload("res://audio/audio_assets/спокойное кипение.mp3")
-const SFX_MEDIUM = preload("res://audio/audio_assets/среднее кипение.mp3")
-const SFX_HOT    = preload("res://audio/audio_assets/сильное кипение.mp3")
+const SFX_COLD   = preload("res://audio/audio_assets/sfx/спокойное кипение.mp3")
+const SFX_MEDIUM = preload("res://audio/audio_assets/sfx/среднее кипение.mp3")
+const SFX_HOT    = preload("res://audio/audio_assets/sfx/сильное кипение.mp3")
 
 const NAMED_PLAYER := "cauldron"
 

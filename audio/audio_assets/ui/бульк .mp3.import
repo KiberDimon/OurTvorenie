@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dsyk23fgsigmv"
+path="res://.godot/imported/бульк .mp3-8ae11a9cbc4141f38b7538d4e663c612.mp3str"
+
+[deps]
+
+source_file="res://audio/audio_assets/ui/бульк .mp3"
+dest_files=["res://.godot/imported/бульк .mp3-8ae11a9cbc4141f38b7538d4e663c612.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

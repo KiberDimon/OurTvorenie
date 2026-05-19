@@ -66,7 +66,7 @@ func _on_guest_served(slot: GuestSlot, correct: bool):
 	# Запускаем анимацию ухода гостя
 	slot.disappear(disappear_duration)
 	#ЛЕХА ТУТ ЗВУК ДВЕРИ===================================================
-	AudioManager.play_sfx(preload("res://audio/audio_assets/door_sfx.mp3"), +4.0)
+	AudioManager.play_sfx(preload("res://audio/audio_assets/sfx/door_sfx.mp3"), +4.0)
 func show_all_orders():
 	for slot in _slots:
 		slot.show_order()

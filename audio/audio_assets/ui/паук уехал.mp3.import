@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d2jp4hug5yx1q"
+path="res://.godot/imported/паук уехал.mp3-67672af681d2551034a40e66897f118d.mp3str"
+
+[deps]
+
+source_file="res://audio/audio_assets/ui/паук уехал.mp3"
+dest_files=["res://.godot/imported/паук уехал.mp3-67672af681d2551034a40e66897f118d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
