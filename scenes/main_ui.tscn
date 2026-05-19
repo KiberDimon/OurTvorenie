@@ -206,7 +206,7 @@ tooltip_text = "Waffles"
 ingredient = ExtResource("15_wn4yt")
 
 [node name="MoneyLabel" type="Label" parent="." unique_id=1536379922]
-modulate = Color(0.5764706, 0.2627451, 0.003921569, 1)
+modulate = Color(0.32156864, 0.30980393, 0.29803923, 1)
 layout_mode = 0
 offset_left = 406.0
 offset_top = 95.0
