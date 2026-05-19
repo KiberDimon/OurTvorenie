@@ -22,3 +22,7 @@ func _notification(what: int) -> void:
 			$Cursor.show() # Возвращаем курсор назад
 func _on_exit_pressed():
 	get_tree().quit()
+
+
+func _on_menu_button_pressed() -> void:
+	menu.show()

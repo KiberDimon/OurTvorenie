@@ -55,6 +55,7 @@
 [ext_resource type="Shader" uid="uid://suq5s0um5jo4" path="res://shaders/blur.gdshader" id="52_0loja"]
 [ext_resource type="Texture2D" uid="uid://bmrcvs714oek5" path="res://assets/Ингридиенты и курсор.png" id="52_o7ddy"]
 [ext_resource type="Script" uid="uid://ho7sstha6qpt" path="res://scripts/cursor.gd" id="53_0loja"]
+[ext_resource type="Texture2D" uid="uid://dn30tpvelixtd" path="res://assets/Название.png" id="56_dnhof"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vrx01"]
 animations = [{
@@ -228,6 +229,8 @@ region = Rect2(75, 0, 45, 53)
 
 [node name="Main" type="Node2D" unique_id=1865117869]
 script = ExtResource("1_0wfyh")
+metadata/_edit_horizontal_guides_ = [100.0, 192.0, 70.0, 10.0]
+metadata/_edit_vertical_guides_ = [184.0, 296.0, 124.0, 356.0, 240.0]
 
 [node name="background" type="Sprite2D" parent="." unique_id=1429966870]
 z_index = -2
@@ -275,6 +278,44 @@ offset_right = 296.0
 offset_bottom = 167.0
 text = "Exit"
 
+[node name="Titles" type="Control" parent="Menu" unique_id=377937977]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Art" type="Label" parent="Menu/Titles" unique_id=555072703]
+layout_mode = 0
+offset_left = 356.0
+offset_top = 89.0
+offset_right = 420.0
+offset_bottom = 134.0
+text = "Art design:
+vYtka_KatIA
+snail_proger"
+
+[node name="Game" type="Label" parent="Menu/Titles" unique_id=1106646606]
+layout_mode = 0
+offset_left = 59.0
+offset_top = 89.0
+offset_right = 125.0
+offset_bottom = 102.0
+text = "Game design:
+EwigerWeg
+Patay"
+
+[node name="Sound" type="Label" parent="Menu/Titles" unique_id=1222240226]
+layout_mode = 0
+offset_left = 205.0
+offset_top = 181.0
+offset_right = 275.0
+offset_bottom = 210.0
+text = "Sound design:
+SalamPapolam"
+
+[node name="Sprite2D" type="Sprite2D" parent="Menu/Titles" unique_id=287666468]
+position = Vector2(240, 38)
+texture = ExtResource("56_dnhof")
+
 [node name="Cursor" type="TextureRect" parent="." unique_id=752139742]
 offset_right = 40.0
 offset_bottom = 40.0
@@ -282,5 +323,14 @@ mouse_filter = 2
 texture = SubResource("AtlasTexture_ids8r")
 script = ExtResource("53_0loja")
 
+[node name="MenuButton" type="Button" parent="." unique_id=975488642]
+offset_left = 2.0
+offset_top = 6.0
+offset_right = 51.0
+offset_bottom = 39.0
+tooltip_text = "Main menu"
+flat = true
+
 [connection signal="pressed" from="Menu/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Menu/Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="MenuButton" to="." method="_on_menu_button_pressed"]

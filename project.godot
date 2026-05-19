@@ -28,8 +28,9 @@ AudioManager="*uid://dewhpjkdg6nay"
 
 window/size/viewport_width=480
 window/size/viewport_height=270
-window/size/window_width_override=1440
-window/size/window_height_override=810
+window/size/mode=3
+window/size/window_width_override=1920
+window/size/window_height_override=1080
 window/stretch/mode="canvas_items"
 mouse_cursor/custom_image="uid://c3dnjcpaas0p3"
 mouse_cursor/tooltip_position_offset=Vector2(10, -20)
@@ -48,4 +49,3 @@ theme/custom_font="uid://ck1fk0264axwf"
 
 textures/canvas_textures/default_texture_filter=3
 rendering_device/driver.windows="d3d12"
-renderer/rendering_method="mobile"
