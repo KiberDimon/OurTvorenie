@@ -276,7 +276,10 @@ texture = SubResource("AtlasTexture_32s7f")
 position = Vector2(240, 135)
 sprite_frames = SubResource("SpriteFrames_kvlnv")
 animation = &"puf"
+frame = 7
+frame_progress = 1.0
 
+[connection signal="cleared" from="Cauldron" to="IngredientList" method="_on_cauldron_cleared"]
 [connection signal="ingredient_added" from="Cauldron" to="IngredientList" method="_on_cauldron_ingredient_added"]
 [connection signal="mouse_entered" from="IngredientList/ToppingCards/EyeTopping" to="IngredientList" method="_on_eye_topping_mouse_entered"]
 [connection signal="mouse_entered" from="IngredientList/ToppingCards/WormTopping" to="IngredientList" method="_on_worm_topping_mouse_entered"]

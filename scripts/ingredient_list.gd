@@ -53,3 +53,7 @@ func _on_waffle_base_mouse_entered() -> void:
 
 func _on_cauldron_ingredient_added(category: Ingredient.Category) -> void:
 	AudioManager.play_ui(preload("res://audio/audio_assets/ui/бульк .mp3"))
+
+
+func _on_cauldron_cleared() -> void:
+	AudioManager.play_ui(preload("res://audio/audio_assets/ui/mouth_foley_puff_03.mp3"))
