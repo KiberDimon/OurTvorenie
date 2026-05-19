@@ -24,12 +24,13 @@
 [ext_resource type="Script" uid="uid://0mb50pa65of5" path="res://scripts/tray.gd" id="12_4yyl0"]
 [ext_resource type="Script" uid="uid://xnyy3k1u1ref" path="res://scripts/guest_data.gd" id="12_rx44x"]
 [ext_resource type="Resource" uid="uid://csm6ok0fww6ea" path="res://resources/guests/rider.tres" id="13_j03cv"]
+[ext_resource type="Script" uid="uid://csu5k8e36i3vi" path="res://scripts/ingredient_list.gd" id="13_o3ev5"]
 [ext_resource type="Resource" uid="uid://6lcj56u7ajar" path="res://resources/guests/arahno.tres" id="14_rbpqj"]
 [ext_resource type="Resource" uid="uid://d0x4iarce7skw" path="res://resources/guests/lurker.tres" id="15_eigca"]
 [ext_resource type="Resource" uid="uid://b7lsv3jtrhxgs" path="res://resources/ingredients/base/waffle_base.tres" id="15_wn4yt"]
 [ext_resource type="Resource" uid="uid://108cqji8i2p0" path="res://resources/guests/zombie.tres" id="16_tshsl"]
 [ext_resource type="Resource" uid="uid://0bvn2q0byoxn" path="res://resources/guests/shkelet.tres" id="17_1t7kk"]
-[ext_resource type="Script" path="res://scripts/toggle_orders_button.gd" id="24_32s7f"]
+[ext_resource type="Script" uid="uid://csay8mywun2fx" path="res://scripts/toggle_orders_button.gd" id="24_32s7f"]
 [ext_resource type="Texture2D" uid="uid://dnsbw8hdg83ow" path="res://assets/Карточки и паук.png" id="24_wn4yt"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_32s7f"]
@@ -124,6 +125,7 @@ offset_left = -9.0
 offset_top = 43.0
 offset_right = 31.0
 offset_bottom = 83.0
+script = ExtResource("13_o3ev5")
 
 [node name="ToppingCards" type="Control" parent="IngredientList" unique_id=1360043338]
 anchors_preset = 0
@@ -274,3 +276,15 @@ texture = SubResource("AtlasTexture_32s7f")
 position = Vector2(240, 135)
 sprite_frames = SubResource("SpriteFrames_kvlnv")
 animation = &"puf"
+
+[connection signal="ingredient_added" from="Cauldron" to="IngredientList" method="_on_cauldron_ingredient_added"]
+[connection signal="mouse_entered" from="IngredientList/ToppingCards/EyeTopping" to="IngredientList" method="_on_eye_topping_mouse_entered"]
+[connection signal="mouse_entered" from="IngredientList/ToppingCards/WormTopping" to="IngredientList" method="_on_worm_topping_mouse_entered"]
+[connection signal="mouse_entered" from="IngredientList/ToppingCards/FlyTopping" to="IngredientList" method="_on_fly_topping_mouse_entered"]
+[connection signal="mouse_entered" from="IngredientList/CreamCards/MudCream" to="IngredientList" method="_on_mud_cream_mouse_entered"]
+[connection signal="mouse_entered" from="IngredientList/CreamCards/BloodCream" to="IngredientList" method="_on_blood_cream_mouse_entered"]
+[connection signal="mouse_entered" from="IngredientList/CreamCards/MoldCream" to="IngredientList" method="_on_mold_cream_mouse_entered"]
+[connection signal="mouse_entered" from="IngredientList/BaseCards/MuffinBase" to="IngredientList" method="_on_muffin_base_mouse_entered"]
+[connection signal="mouse_entered" from="IngredientList/BaseCards/CocktailBase" to="IngredientList" method="_on_cocktail_base_mouse_entered"]
+[connection signal="mouse_entered" from="IngredientList/BaseCards/CornetBase" to="IngredientList" method="_on_cornet_base_mouse_entered"]
+[connection signal="mouse_entered" from="IngredientList/BaseCards/WaffleBase" to="IngredientList" method="_on_waffle_base_mouse_entered"]
