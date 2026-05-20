@@ -301,7 +301,7 @@ offset_right = 125.0
 offset_bottom = 102.0
 text = "Game design:
 EwigerWeg
-Patay"
+CXC"
 
 [node name="Sound" type="Label" parent="Menu/Titles" unique_id=1222240226]
 layout_mode = 0

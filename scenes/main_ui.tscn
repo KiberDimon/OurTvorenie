@@ -264,6 +264,7 @@ offset_left = 450.0
 offset_top = 11.0
 offset_right = 467.0
 offset_bottom = 35.0
+tooltip_text = "Spider"
 toggle_mode = true
 flat = true
 script = ExtResource("24_32s7f")
